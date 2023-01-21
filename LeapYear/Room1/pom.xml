@@ -27,7 +27,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.leapyear.LeapYearRoom1</mainClass>
+              <mainClass>edu.pdx.cs410J.room1.LeapYearRoom1</mainClass>
             </manifest>
           </archive>
         </configuration>
