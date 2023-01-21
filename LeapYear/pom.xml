@@ -20,6 +20,11 @@
     <module>Room2</module>
     <module>Room3</module>
     <module>Room4</module>
+    <module>Room5</module>
+    <module>Room6</module>
+    <module>Room7</module>
+    <module>Room8</module>
+    <module>Room9</module>
   </modules>
 
   <inceptionYear>2023</inceptionYear>
