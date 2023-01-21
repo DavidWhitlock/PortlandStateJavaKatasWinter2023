@@ -16,6 +16,7 @@
   <description>Parent project for the LeapYear katas </description>
 
   <modules>
+    <module>Room1</module>
   </modules>
 
   <inceptionYear>2023</inceptionYear>
