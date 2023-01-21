@@ -11,8 +11,7 @@
   <version>2023.0.0</version>
   <packaging>jar</packaging>
 
-  <name>Kata Project</name>
-  <description>A simple project for getting started with code Room1s</description>
+  <name>LeapYear Room 1</name>
   <url>http://www.cs.pdx.edu</url>
 
   <properties>
@@ -28,7 +27,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.leapyear.Kata</mainClass>
+              <mainClass>edu.pdx.cs410J.leapyear.LeapYearRoom1</mainClass>
             </manifest>
           </archive>
         </configuration>
