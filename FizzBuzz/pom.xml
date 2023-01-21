@@ -28,7 +28,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.pairing.Kata</mainClass>
+              <mainClass>edu.pdx.cs410J.pairing.FizzBuzz</mainClass>
             </manifest>
           </archive>
         </configuration>

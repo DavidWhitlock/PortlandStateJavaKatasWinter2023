@@ -2,12 +2,12 @@ package edu.pdx.cs410J.pairing;
 
 import org.junit.jupiter.api.Test;
 
-public class KataTest
+public class FizzBuzzTest
 {
 
   @Test
-  void canInstantiateKataClass() {
-    new Kata();
+  void canInstantiateFizzBuzzClass() {
+    new FizzBuzz();
   }
 
 }
