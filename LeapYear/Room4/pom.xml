@@ -14,6 +14,17 @@
   <name>LeapYear Room 4</name>
   <url>http://www.cs.pdx.edu</url>
 
+  <developers>
+    <developer>
+      <id>student1</id>
+      <name>Pair Programmer1</name>
+    </developer>
+    <developer>
+      <id>student2</id>
+      <name>Pair Programmer2</name>
+    </developer>
+  </developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
