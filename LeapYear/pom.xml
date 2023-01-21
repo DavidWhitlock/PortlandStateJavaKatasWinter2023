@@ -17,6 +17,7 @@
 
   <modules>
     <module>Room1</module>
+    <module>Room2</module>
   </modules>
 
   <inceptionYear>2023</inceptionYear>
