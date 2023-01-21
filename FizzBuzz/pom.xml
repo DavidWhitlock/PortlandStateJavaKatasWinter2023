@@ -19,6 +19,45 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <developers>
+    <developer>
+      <id>whitlock</id>
+      <name>David Whitlock</name>
+      <email>whitlock@cs.pdx.edu</email>
+      <url>http://www.cs.pdx.edu/~whitlock</url>
+      <organization>PSU Department of Computer Science</organization>
+      <organizationUrl>http://www.cs.pdx.edu</organizationUrl>
+      <roles>
+        <role>Professor</role>
+      </roles>
+      <timezone>-7</timezone>
+    </developer>
+    <developer>
+      <id>student1</id>
+      <name>Student Volunteer1</name>
+    </developer>
+    <developer>
+      <id>student2</id>
+      <name>Student Volunteer2</name>
+    </developer>
+    <developer>
+      <id>student3</id>
+      <name>Student Volunteer3</name>
+    </developer>
+    <developer>
+      <id>student4</id>
+      <name>Student Volunteer4</name>
+    </developer>
+    <developer>
+      <id>student5</id>
+      <name>Student Volunteer5</name>
+    </developer>
+    <developer>
+      <id>student6</id>
+      <name>Student Volunteer6</name>
+    </developer>
+  </developers>
+
   <build>
     <plugins>
       <plugin>
