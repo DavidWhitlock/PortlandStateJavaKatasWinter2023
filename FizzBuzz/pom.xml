@@ -35,26 +35,44 @@
     <developer>
       <id>student1</id>
       <name>Student Volunteer1</name>
+      <roles>
+        <role>Choose Driver or Navigator for your initial pairing role</role>
+      </roles>
     </developer>
     <developer>
       <id>student2</id>
       <name>Student Volunteer2</name>
+      <roles>
+        <role>Choose Driver or Navigator for your initial pairing role</role>
+      </roles>
     </developer>
     <developer>
       <id>student3</id>
       <name>Student Volunteer3</name>
+      <roles>
+        <role>Choose Driver or Navigator for your initial pairing role</role>
+      </roles>
     </developer>
     <developer>
       <id>student4</id>
       <name>Student Volunteer4</name>
+      <roles>
+        <role>Choose Driver or Navigator for your initial pairing role</role>
+      </roles>
     </developer>
     <developer>
       <id>student5</id>
       <name>Student Volunteer5</name>
+      <roles>
+        <role>Choose Driver or Navigator for your initial pairing role</role>
+      </roles>
     </developer>
     <developer>
       <id>student6</id>
       <name>Student Volunteer6</name>
+      <roles>
+        <role>Choose Driver or Navigator for your initial pairing role</role>
+      </roles>
     </developer>
   </developers>
 
