@@ -17,11 +17,15 @@
   <developers>
     <developer>
       <id>student1</id>
-      <name>Pair Programmer1</name>
+      <name>Zhengmao Zhang</name>
     </developer>
     <developer>
       <id>student2</id>
-      <name>Pair Programmer2</name>
+      <name>Clara Stickney</name>
+    </developer>
+    <developer>
+      <id>student3</id>
+      <name>Sean Hendrickson</name>
     </developer>
   </developers>
 
