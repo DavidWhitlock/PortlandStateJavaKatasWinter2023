@@ -26,6 +26,8 @@ public class FizzBuzz {
 
   @VisibleForTesting
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
+    for (int i = 1; i <= 100; i++) {
+      System.out.println(fizzBuzz(i));
+    }
   }
 }
