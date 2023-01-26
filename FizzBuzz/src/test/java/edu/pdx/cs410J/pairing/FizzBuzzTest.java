@@ -9,22 +9,26 @@ public class FizzBuzzTest
 {
   @Test
   void threeIsFizz(){
-    assertThat(FizzBuzz.fizzBuzz(3), equalTo(FizzBuzz.FIZZ));
+    assertFizzBuzz(3, FizzBuzz.FIZZ);
+  }
+
+  private static void assertFizzBuzz(int number, String result) {
+    assertThat(FizzBuzz.fizzBuzz(number), equalTo(result));
   }
 
   @Test
   void fiveIsBuzz(){
-    assertThat(FizzBuzz.fizzBuzz(5), equalTo(FizzBuzz.BUZZ));
+    assertFizzBuzz(5, FizzBuzz.BUZZ);
   }
 
   @Test
   void fifteenIsFizzBuzz(){
-    assertThat(FizzBuzz.fizzBuzz(15), equalTo(FizzBuzz.FIZZBUZZ));
+    assertFizzBuzz(15, FizzBuzz.FIZZBUZZ);
   }
 
   @Test
   void thirteenIs13() {
-    assertThat(FizzBuzz.fizzBuzz(13), equalTo("13"));
+    assertFizzBuzz(13, "13");
   }
 
 }
