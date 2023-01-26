@@ -47,10 +47,10 @@
       </roles>
     </developer>
     <developer>
-      <id>Shreyoshi</id>
-      <name>Driver</name>
+      <id>student3</id>
+      <name>Shreyoshi</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
