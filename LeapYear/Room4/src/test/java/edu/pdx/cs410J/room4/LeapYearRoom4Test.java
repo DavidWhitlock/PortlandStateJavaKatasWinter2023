@@ -16,7 +16,17 @@ public class LeapYearRoom4Test
 
 
   @Test
-  void yearISLeapYear(){
-    assertThat(LeapYearRoom4.LeapYearRoom4Input(2000), equalTo("LEAP YEAR"));
+  void yearIsLeapYear(){
+    int[] isLeapYears = new int[] {2012, 2016, 2000};
+    for (int i = 0; i < isLeapYears.length; i++) {
+      assertThat(LeapYearRoom4.LeapYearRoom4Input(isLeapYears[i]), equalTo("LEAP YEAR"));
+    }
+  }
+  @Test
+  void yearIsNotLeapYear() {
+    int[] notLeapYears = new int[] {1700, 2019, 1855};
+    for (int i = 0; i < notLeapYears.length; i++) {
+      assertThat(LeapYearRoom4.LeapYearRoom4Input(notLeapYears[i]), equalTo("NOT LEAP YEAR"));
+    }
   }
 }

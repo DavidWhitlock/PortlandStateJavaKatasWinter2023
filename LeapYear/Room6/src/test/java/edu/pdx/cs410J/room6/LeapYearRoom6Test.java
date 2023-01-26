@@ -36,4 +36,9 @@ public class LeapYearRoom6Test
     assertThat(result, equalTo(false));
   }
 
+  @Test
+  void isYearDivisibleByFourHundredsLeapYear() {
+    boolean result = LeapYearRoom6.isLeapYear(400);
+    assertThat(result, equalTo(true));
+  }
 }
