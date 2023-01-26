@@ -33,10 +33,10 @@
       <timezone>-7</timezone>
     </developer>
     <developer>
-      <id>student1</id>
+      <id>Shreyoshi</id>
       <name>Student Volunteer1</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
