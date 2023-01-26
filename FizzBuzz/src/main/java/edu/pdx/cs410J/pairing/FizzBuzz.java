@@ -14,7 +14,9 @@ public class FizzBuzz {
     }
     if(number % 3 == 0)
       return FIZZ;
-    return BUZZ;
+    if(number % 5 == 0)
+      return BUZZ;
+    return String.valueOf(number);
   }
   @VisibleForTesting
   public static void main(String[] args) {
