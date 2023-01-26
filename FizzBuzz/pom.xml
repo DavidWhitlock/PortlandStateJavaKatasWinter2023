@@ -33,22 +33,22 @@
       <timezone>-7</timezone>
     </developer>
     <developer>
-      <id>Shreyoshi</id>
-      <name>Student Volunteer1</name>
+      <id>student1</id>
+      <name>Clara Stickney</name>
       <roles>
         <role>Driver</role>
       </roles>
     </developer>
     <developer>
       <id>student2</id>
-      <name>Student Volunteer2</name>
+      <name>Kaushambi Gujral</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
-      <id>student3</id>
-      <name>Student Volunteer3</name>
+      <id>Shreyoshi</id>
+      <name>Driver</name>
       <roles>
         <role>Choose Driver or Navigator for your initial pairing role</role>
       </roles>
