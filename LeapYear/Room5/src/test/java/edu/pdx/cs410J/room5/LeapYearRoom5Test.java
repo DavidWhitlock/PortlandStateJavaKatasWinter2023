@@ -1,6 +1,6 @@
 package edu.pdx.cs410J.room5;
-
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LeapYearRoom5Test
 {
@@ -14,7 +14,6 @@ public class LeapYearRoom5Test
   @Test
   void twoThousandIsLeapYear()
   {
-
-    assertThat(LeapYearRoom5)
+    assertTrue(LeapYearRoom5.isLeapYear(2000));
   }
 }

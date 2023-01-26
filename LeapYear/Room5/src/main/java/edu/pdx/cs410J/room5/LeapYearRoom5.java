@@ -6,7 +6,6 @@ public class LeapYearRoom5 {
 
   static boolean isLeapYear(int year)
   {
-
     return false;
   }
 
