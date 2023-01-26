@@ -23,6 +23,15 @@ public class LeapYearRoom14Test
     assertThat(LeapYearRoom14.checkForLeapYear(2000),equalTo(true));
   }
 
+  @Test
+  void testLeapYear1800NotLeapYear(){
+    assertThat(LeapYearRoom14.checkForLeapYear(1800),equalTo(false));
+  }
+
+  @Test
+  void testLeapYear2020IsLeapYear(){
+    assertThat(LeapYearRoom14.checkForLeapYear(2020),equalTo(true));
+  }
 
 
 
