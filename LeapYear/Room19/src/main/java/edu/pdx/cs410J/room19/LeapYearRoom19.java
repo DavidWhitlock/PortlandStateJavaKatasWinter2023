@@ -15,15 +15,7 @@ public class LeapYearRoom19 {
 
   static boolean isLeapYear(String year){
     int yr = Integer.parseInt(year);
-    if(yr%400==0){
-      System.out.println(year + leapYear);
-      return true;
-    }
-    if(yr%100==0){
-      System.out.println(year + notLeapYear);
-      return false;
-    }
-    if(yr%4==0){
+    if(yr%400==0 || (yr%4==0&& yr%100!=0)){
       System.out.println(year + leapYear);
       return true;
     }
