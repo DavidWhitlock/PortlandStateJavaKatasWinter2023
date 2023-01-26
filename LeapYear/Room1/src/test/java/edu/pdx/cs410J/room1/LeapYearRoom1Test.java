@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class LeapYearRoom1Test
 {
@@ -14,9 +14,15 @@ public class LeapYearRoom1Test
     new LeapYearRoom1();
   }
   @Test
-  void canGetFailResult(){
+  void theYear2000IsALeapYear(){
+    boolean result = LeapYearRoom1.isLeapYear(2000);
+    assertTrue(result);
+  }
+
+  @Test
+  void theYear1900IsNotALeapYear(){
     boolean result = LeapYearRoom1.isLeapYear(1900);
-    assertEquals(result, false);
+    assertFalse(result);
   }
 
 

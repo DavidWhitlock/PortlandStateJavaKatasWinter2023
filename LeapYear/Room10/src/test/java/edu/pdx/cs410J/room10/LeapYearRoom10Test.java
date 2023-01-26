@@ -15,8 +15,19 @@ public class LeapYearRoom10Test {
     void year1700IsNotALeapYear(){
         assertThat(LeapYearRoom10.isLeapYear(1700), equalTo(false));
     }
+
+    @Test
+    void year2000IsALeapYear(){
+        assertThat(LeapYearRoom10.isLeapYear(2000), equalTo(true));
+    }
+
     @Test
     void year2008IsALeapYear(){
         assertThat(LeapYearRoom10.isLeapYear(2008), equalTo(true));
+    }
+
+    @Test
+    void year2017IsNotALeapYear(){
+        assertThat(LeapYearRoom10.isLeapYear(2017), equalTo(false));
     }
 }
