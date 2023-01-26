@@ -28,12 +28,13 @@ public class LeapYearRoom13 {
   }
   @VisibleForTesting
   public static void main(String[] args) {
+
     try {
       System.out.println(LeapYearRoom13.leapYearCheck(parseYearCheck(args)));
     } catch (IOException e) {
       System.err.println(e.getMessage());
     }
 
-//    System.err.println("Missing command line arguments");
+
   }
 }
