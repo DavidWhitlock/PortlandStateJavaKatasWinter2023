@@ -4,7 +4,11 @@ import com.google.common.annotations.VisibleForTesting;
 
 public class LeapYearRoom1 {
   public static boolean isLeapYear(int year){
-    return true;
+    if(year % 4 == 0 && year % 100 != 0) {
+      return true;
+    }
+
+    return false;
   }
   @VisibleForTesting
   public static void main(String[] args) {

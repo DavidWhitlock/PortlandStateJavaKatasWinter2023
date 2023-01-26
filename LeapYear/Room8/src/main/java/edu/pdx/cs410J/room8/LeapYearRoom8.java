@@ -6,11 +6,18 @@ public class LeapYearRoom8 {
 
   @VisibleForTesting
   public static void main(String[] args) {
-    boolean res = checkForLeapYear(1000);
-    if (res) System.out.println("Leap year!");
-    else {
-      System.out.println("Not a leap year!");
+    if (args.length == 0) {
+      System.err.println("Missing command-line argument for leap year.");
     }
+    else {
+      int num = Integer.parseInt(args[0]);
+      if (checkForLeapYear(num)) {
+        System.out.println("Leap year!");
+      } else {
+        System.out.println("Not a leap year!");
+      }
+    }
+
   }
 
   static boolean checkForLeapYear(int number) {
@@ -19,7 +26,7 @@ public class LeapYearRoom8 {
     if (number % 400 == 0) {
       val = true;
     }
-    if ((number % 100 == 0) && (number % 400 != 0)) {
+    else if ((number % 4 == 0) && (number % 100 != 0)) {
       val = true;
     }
 
