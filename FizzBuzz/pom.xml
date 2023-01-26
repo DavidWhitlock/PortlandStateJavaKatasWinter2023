@@ -48,7 +48,7 @@
     </developer>
     <developer>
       <id>student3</id>
-      <name>Shreyoshi</name>
+      <name>Shreyoshi Mahato</name>
       <roles>
         <role>Driver</role>
       </roles>
@@ -62,14 +62,14 @@
     </developer>
     <developer>
       <id>student5</id>
-      <name>Student Volunteer5</name>
+      <name>James Ressler</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
-      <id>dbake2</id>
-      <name>David Baker-Robinson</name>
+      <id>student6</id>
+      <name>Pragati Rathore</name>
       <roles>
         <role>Choose Driver or Navigator for your initial pairing role</role>
       </roles>
