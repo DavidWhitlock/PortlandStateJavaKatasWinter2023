@@ -8,11 +8,16 @@ import static org.hamcrest.core.StringContains.containsString;
 
 class LeapYearRoom5IT extends InvokeMainTestCase {
 
+  /**
+   * When the input is -ve integer
+   * the main method should
+   * print out an error message
+   * */
   @Test
-  void invokingMainWithNoArgumentsPrintsMissingArgumentsToStandardError() {
-    InvokeMainTestCase.MainMethodResult result = invokeMain(LeapYearRoom5.class);
-    assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
+  void checkIfInputIsValid(){
+    String[] args = new String[] {"-1995"};
+    InvokeMainTestCase.MainMethodResult result = invokeMain(LeapYearRoom5.class, args);
+    assertThat(result.getTextWrittenToStandardError(), containsString("Invalid argument"));
   }
-
 
 }

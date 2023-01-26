@@ -24,6 +24,8 @@ public class FizzBuzzTest
   @Test
   void fifteenIsFizzBuzz(){
     assertFizzBuzz(15, FizzBuzz.FIZZBUZZ);
+
+
   }
 
   @Test
