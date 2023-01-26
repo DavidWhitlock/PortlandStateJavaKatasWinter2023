@@ -50,7 +50,7 @@
       <id>student3</id>
       <name>Shreyoshi Mahato</name>
       <roles>
-        <role>Navigator</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
@@ -62,9 +62,9 @@
     </developer>
     <developer>
       <id>student5</id>
-      <name>Student Volunteer5</name>
+      <name>James Ressler</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
