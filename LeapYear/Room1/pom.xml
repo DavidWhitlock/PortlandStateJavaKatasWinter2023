@@ -23,6 +23,10 @@
       <id>student2</id>
       <name>Clara Stickney</name>
     </developer>
+    <developer>
+      <id>student3</id>
+      <name>for uuuu</name>
+    </developer>
   </developers>
 
   <properties>
