@@ -4,10 +4,17 @@ import com.google.common.annotations.VisibleForTesting;
 
 public class FizzBuzz {
 
+  static final String FIZZ = "Fizz";
+  static final String BUZZ = "Buzz";
+  static final String FIZZBUZZ = "FizzBuzz";
+
   public static String fizzBuzz(int number){
+    if (number % 15 == 0) {
+      return FIZZBUZZ;
+    }
     if(number % 3 == 0)
-      return "fizz";
-    return "buzz";
+      return FIZZ;
+    return BUZZ;
   }
   @VisibleForTesting
   public static void main(String[] args) {
