@@ -6,6 +6,10 @@ public class LeapYearRoom11 {
 
   @VisibleForTesting
   public static boolean isYearALeapYear(int year) {
+    if (year % 400 == 0) {
+      return true;
+    }
+
     return false;
   }
   @VisibleForTesting
