@@ -17,6 +17,7 @@ public class LeapYearRoom8 {
   static boolean checkForLeapYear(int number) {
     boolean val = false;
 
+
     if (number % 400 == 0) {
       val = true;
     }

@@ -27,7 +27,6 @@ public class LeapYearRoom8Test
     assertFalse(LeapYearRoom8.checkForLeapYear(1700));
     assertFalse(LeapYearRoom8.checkForLeapYear(1800));
     assertFalse(LeapYearRoom8.checkForLeapYear(1900));
-
   }
 
 
