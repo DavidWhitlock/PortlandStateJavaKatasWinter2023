@@ -8,13 +8,25 @@ public class LeapYearRoom9Test
 {
 
   @Test
-  int year = 400;
-  void isDivisibleBy400(){
-    leapYearTest(400);
+  void testYear400(){
+    int year = 400;
+    leapYearTrue(400);
   }
 
-  private static void leapYearTest(int year) {
-    assertTrue(LeapYearRoom9.isLeapYear(int year));
+  @Test
+  void testYear100()
+  {
+    int year = 100;
+    leapYearFalse(year);
   }
 
+
+
+  private static void leapYearTrue(int year) {
+    assertTrue(LeapYearRoom9.isLeapYear(year));
+  }
+
+  private static void leapYearFalse(int year) {
+    assertTrue(!LeapYearRoom9.isLeapYear(year));
+  }
 }
