@@ -8,7 +8,15 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class LeapYearRoom10Test {
     @Test
-    void fourHundredIsDivisibleBy400() {
+    void year400IsALeapYear() {
         assertThat(LeapYearRoom10.isLeapYear(400), equalTo(true));
+    }
+    @Test
+    void year1700IsNotALeapYear(){
+        assertThat(LeapYearRoom10.isLeapYear(1700), equalTo(false));
+    }
+    @Test
+    void year2008IsALeapYear(){
+        assertThat(LeapYearRoom10.isLeapYear(2008), equalTo(true));
     }
 }
