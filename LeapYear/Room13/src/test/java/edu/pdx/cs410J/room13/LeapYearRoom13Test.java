@@ -23,6 +23,11 @@ public class LeapYearRoom13Test
   }
 
   @Test
+  void assertNotaYear() throws IOException {
+    String[] year = {"-32"};
+    assertThrows(IOException.class,() -> LeapYearRoom13.parseYearCheck(year));
+  }
+  @Test
   void assertDivisibleby100() {
     int year = 2100;
     assertThat(LeapYearRoom13.leapYearCheck(year),equalTo(false));
