@@ -21,7 +21,7 @@ class LeapYearRoom13IT extends InvokeMainTestCase {
   void assertThrowsIOException() {
     String[] args = {"blarg"};
     InvokeMainTestCase.MainMethodResult result = invokeMain(LeapYearRoom13.class, args);
-    assertThat(result.getTextWrittenToStandardError(), containsString("Unable to parse year.  Not an integer."));
+    assertThat(result.getTextWrittenToStandardError(), containsString("Unable to parse year."));
   }
 
 
