@@ -3,6 +3,8 @@ package edu.pdx.cs410J.room13;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static java.lang.Integer.parseInt;
 
@@ -19,19 +21,21 @@ public class LeapYearRoom13 {
     return rval;
   }
 
-  private static int parseYearCheck(String[] args) throws IOException {
+  public static int parseYearCheck(String[] args) throws IOException {
     try {
-       return parseInt(args[0]);
-    } catch (NumberFormatException e) {
-      throw new IOException("Unable to parse year.  Not an integer.");
+      Date date = new Date("yyyy");
+      return parseInt(date.toString());
+    } catch (IllegalArgumentException e) {
+      throw new IOException("Unable to parse year.");
     }
   }
   @VisibleForTesting
   public static void main(String[] args) {
-
     try {
+      if (args.length < 1)
+        throw new IllegalArgumentException("Missing command line arguments");
       System.out.println(LeapYearRoom13.leapYearCheck(parseYearCheck(args)));
-    } catch (IOException e) {
+    } catch (IOException | IllegalArgumentException e) {
       System.err.println(e.getMessage());
     }
 
