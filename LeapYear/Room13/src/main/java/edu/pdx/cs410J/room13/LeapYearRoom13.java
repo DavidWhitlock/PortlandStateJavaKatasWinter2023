@@ -23,7 +23,7 @@ public class LeapYearRoom13 {
 
   public static int parseYearCheck(String[] args) throws IOException {
     try {
-      Date date = new Date("yyyy");
+      Date date = new Date(args[0]);
       return parseInt(date.toString());
     } catch (IllegalArgumentException e) {
       throw new IOException("Unable to parse year.");

@@ -9,8 +9,18 @@ public class LeapYearRoom7 {
     if (args.length == 0) {
       System.err.println("Missing arguments");
       return;
+    } else if (args.length > 1) {
+      System.err.println("Too many arguments. Please enter a single numeric value.");
+      return;
     }
-    System.out.println(isLeapYear(Integer.parseInt(args[0])));
+    int inputYear;
+    try {
+      inputYear  = Integer.parseInt(args[0]);
+    } catch(NumberFormatException e){
+      System.err.println("Invalid input year provided. Please enter numeric value.");
+      return;
+    }
+    System.out.println(isLeapYear(inputYear));
   }
 
   public static boolean isLeapYear(int year) {
