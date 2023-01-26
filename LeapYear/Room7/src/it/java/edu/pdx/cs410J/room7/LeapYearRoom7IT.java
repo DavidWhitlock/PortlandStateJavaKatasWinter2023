@@ -20,7 +20,19 @@ class LeapYearRoom7IT extends InvokeMainTestCase {
   @Test
   void checkNonNumericIsLeapYear() {
     InvokeMainTestCase.MainMethodResult result = invokeMain("abcd");
-    assertThat(result.getTextWrittenToStandardError(), containsString("Missing arguments"));
+    assertThat(result.getTextWrittenToStandardError(), containsString("Invalid input year provided. Please enter numeric value."));
+  }
+
+  @Test
+  void checkMultipleArgumentsReturnsError() {
+    InvokeMainTestCase.MainMethodResult result = invokeMain("2012", "2000");
+    assertThat(result.getTextWrittenToStandardError(), containsString("Too many arguments. Please enter a single numeric value."));
+  }
+
+  @Test
+  void check2020IsLeapYear() {
+    InvokeMainTestCase.MainMethodResult result = invokeMain("2020");
+    assertThat(result.getTextWrittenToStandardOut(), containsString("true"));
   }
 
 }
