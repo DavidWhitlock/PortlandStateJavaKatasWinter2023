@@ -14,5 +14,15 @@ class LeapYearRoom10IT extends InvokeMainTestCase {
     assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
   }
 
+  @Test
+  void invalidInputType() {
+    InvokeMainTestCase.MainMethodResult result = invokeMain(LeapYearRoom10.class, "test");
+    assertThat(result.getTextWrittenToStandardError(), containsString("Invalid int"));
+  }
 
+  @Test
+  void validInputType() {
+    InvokeMainTestCase.MainMethodResult result = invokeMain(LeapYearRoom10.class, "1");
+    assertThat(result.getTextWrittenToStandardOut(), containsString("1 is NOT a leap year"));
+  }
 }
