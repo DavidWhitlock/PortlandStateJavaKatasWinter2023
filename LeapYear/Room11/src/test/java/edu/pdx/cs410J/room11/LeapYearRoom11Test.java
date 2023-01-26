@@ -10,31 +10,35 @@ public class LeapYearRoom11Test
 {
   @Test
   void is2000ALeapYear() {
-    assertTrue(LeapYearRoom11.isYearALeapYear(2000));
+    assertLeapYear(2000);
+  }
+
+  private static void assertLeapYear(int year) {
+    assertTrue(LeapYearRoom11.isYearALeapYear(year));
   }
 
   @Test
-  void isYearDivisibleBy400ShouldBeLeapYear() {
-    assertTrue(LeapYearRoom11.isYearALeapYear(400));
+  void isDivisibleBy400IsLeap() {
+    assertLeapYear(400);
   }
 
   @Test
-  void isYearNotDivisibleBy4ShouldNotBeLeapYear() {
+  void isNotDivisibleBy4IsNormal() {
     assertFalse(LeapYearRoom11.isYearALeapYear(401));
   }
 
   @Test
-  void isYearDivisibleBy100ButNotBy400BeNotALeapYear() {
+  void isDivisibleBy100ButNot400BIsNormal() {
     assertFalse(LeapYearRoom11.isYearALeapYear(100));
   }
 
   @Test
-  void isYearDivisibleBy4ButNotBy100BeALeapYear() {
-    assertTrue(LeapYearRoom11.isYearALeapYear(4));
+  void isDivisibleBy4ButNot100IsLeap() {
+    assertLeapYear(4);
   }
 
   @Test
-  void isYearDivisibleBy4NotBeALeapYear() {
+  void isDivisibleBy4IsNormal() {
     assertFalse(LeapYearRoom11.isYearALeapYear(5));
   }
 }

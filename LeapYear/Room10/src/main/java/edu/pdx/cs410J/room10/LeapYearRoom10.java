@@ -17,6 +17,30 @@ public class LeapYearRoom10 {
 
   @VisibleForTesting
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
+    if (args.length == 0) {
+      System.err.println("Missing command line arguments");
+    }
+
+    int year;
+
+    try {
+      year = Integer.parseInt(args[0]);
+    }
+    catch (Exception e) {
+      System.err.println("Invalid int");
+      return;
+    }
+
+    if (year < 0) {
+      System.err.println("Please provide a year greater than 0");
+      return;
+    }
+
+    if (isLeapYear(year)) {
+      System.out.println(year + " is a leap year");
+    }
+    else {
+      System.out.println(year + " is NOT a leap year");
+    }
   }
 }
