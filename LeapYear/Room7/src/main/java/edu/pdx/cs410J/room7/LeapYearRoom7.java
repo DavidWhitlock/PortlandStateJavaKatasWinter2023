@@ -17,14 +17,12 @@ public class LeapYearRoom7 {
       System.err.println(TOO_MANY_ARGUMENTS);
       return;
     }
-    int inputYear;
     try {
-      inputYear = Integer.parseInt(args[0]);
+      int inputYear = Integer.parseInt(args[0]);
+      System.out.println(isLeapYear(inputYear));
     } catch (NumberFormatException e) {
       System.err.println(INVALID_INPUT_YEAR);
-      return;
     }
-    System.out.println(isLeapYear(inputYear));
   }
 
   public static boolean isLeapYear(int year) {
