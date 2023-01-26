@@ -20,7 +20,24 @@ public class LeapYearRoom9Test
     leapYearFalse(year);
   }
 
+  @Test
+  void testYear4()
+  {
+    int year = 4;
+    leapYearTrue(year);
+  }
 
+  @Test
+  void testYear17(){
+    int year = 17;
+    leapYearFalse(year);
+  }
+
+  @Test
+  void testYear2000(){
+    int year = 2000;
+    leapYearTrue(year);
+  }
 
   private static void leapYearTrue(int year) {
     assertTrue(LeapYearRoom9.isLeapYear(year));
