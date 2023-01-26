@@ -30,4 +30,14 @@ public class LeapYearRoom7Test {
   void is223LeapYear() {
     assertFalse(LeapYearRoom7.isLeapYear(223));
   }
+
+  @Test
+  void is2100LeapYear() {
+    assertFalse(LeapYearRoom7.isLeapYear(2100));
+  }
+
+  @Test
+  void is0LeapYear() {
+    assertTrue(LeapYearRoom7.isLeapYear(0));
+  }
 }
