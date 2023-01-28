@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>LeapYear</artifactId>
+    <artifactId>Diamond</artifactId>
     <groupId>edu.pdx.cs410J.katas</groupId>
     <version>2023.0.0</version>
   </parent>
@@ -11,7 +11,7 @@
   <version>2023.0.0</version>
   <packaging>jar</packaging>
 
-  <name>LeapYear Room 10</name>
+  <name>Diamond Room 10</name>
   <url>http://www.cs.pdx.edu</url>
 
   <developers>
@@ -38,7 +38,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.room10.LeapYearRoom10</mainClass>
+              <mainClass>edu.pdx.cs410J.room10.DiamondRoom10</mainClass>
             </manifest>
           </archive>
         </configuration>
