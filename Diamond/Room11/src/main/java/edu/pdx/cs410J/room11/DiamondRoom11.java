@@ -1,8 +1,8 @@
-package edu.pdx.cs410J.room19;
+package edu.pdx.cs410J.room11;
 
 import com.google.common.annotations.VisibleForTesting;
 
-public class LeapYearRoom19 {
+public class DiamondRoom11 {
 
   @VisibleForTesting
   public static void main(String[] args) {

@@ -1,13 +1,13 @@
-package edu.pdx.cs410J.room14;
+package edu.pdx.cs410J.room15;
 
 import org.junit.jupiter.api.Test;
 
-public class LeapYearRoom14Test
+public class DiamondRoom15Test
 {
 
   @Test
   void canInstantiateKataClass() {
-    new LeapYearRoom14();
+    new DiamondRoom15();
   }
 
 }

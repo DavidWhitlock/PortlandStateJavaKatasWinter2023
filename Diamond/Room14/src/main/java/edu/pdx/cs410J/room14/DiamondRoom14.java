@@ -2,7 +2,7 @@ package edu.pdx.cs410J.room14;
 
 import com.google.common.annotations.VisibleForTesting;
 
-public class LeapYearRoom14 {
+public class DiamondRoom14 {
 
   @VisibleForTesting
   public static void main(String[] args) {
