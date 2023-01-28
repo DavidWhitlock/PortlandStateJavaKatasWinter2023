@@ -16,11 +16,11 @@
   <description>Parent project for the Diamond katas </description>
 
   <modules>
-    <module>Room1</module>
-    <module>Room2</module>
-    <module>Room3</module>
-    <module>Room4</module>
-    <module>Room5</module>
+    <module>DiamondRoom1</module>
+    <module>DiamondRoom2</module>
+    <module>DiamondRoom3</module>
+    <module>DiamondRoom4</module>
+    <module>DiamondRoom5</module>
     <module>Room6</module>
     <module>Room7</module>
     <module>Room8</module>
