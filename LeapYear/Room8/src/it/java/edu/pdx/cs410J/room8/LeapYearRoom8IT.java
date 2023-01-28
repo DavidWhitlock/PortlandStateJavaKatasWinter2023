@@ -11,7 +11,7 @@ class LeapYearRoom8IT extends InvokeMainTestCase {
   @Test
   void invokingMainWithNoArgumentsPrintsMissingArgumentsToStandardError() {
     InvokeMainTestCase.MainMethodResult result = invokeMain(LeapYearRoom8.class);
-    assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
+    assertThat(result.getTextWrittenToStandardError(), containsString("Missing command-line argument for leap year."));
   }
 
 
