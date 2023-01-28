@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>PortlandStateJavaKatasWinter2023</artifactId>
+    <groupId>edu.pdx.cs410J.katas</groupId>
+    <version>2023.0.0</version>
+  </parent>
+
+  <artifactId>LeapYear</artifactId>
+  <version>2023.0.0</version>
+
+  <packaging>pom</packaging>
+  <name>LeapYear Katas</name>
+  <description>Parent project for the LeapYear katas </description>
+
+  <modules>
+    <module>Room1</module>
+    <module>Room2</module>
+    <module>Room3</module>
+    <module>Room4</module>
+    <module>Room5</module>
+    <module>Room6</module>
+    <module>Room7</module>
+    <module>Room8</module>
+    <module>Room9</module>
+    <module>Room10</module>
+    <module>Room11</module>
+    <module>Room12</module>
+    <module>Room13</module>
+    <module>Room14</module>
+    <module>Room15</module>
+    <module>Room16</module>
+    <module>Room17</module>
+    <module>Room18</module>
+    <module>Room19</module>
+    <module>Room20</module>
+  </modules>
+
+  <inceptionYear>2023</inceptionYear>
+  <organization>
+    <name>Portland State University</name>
+    <url>http://www.pdx.edu</url>
+  </organization>
+
+</project>
