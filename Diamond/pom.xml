@@ -21,21 +21,21 @@
     <module>DiamondRoom3</module>
     <module>DiamondRoom4</module>
     <module>DiamondRoom5</module>
-    <module>Room6</module>
-    <module>Room7</module>
-    <module>Room8</module>
-    <module>Room9</module>
-    <module>Room10</module>
-    <module>Room11</module>
-    <module>Room12</module>
-    <module>Room13</module>
-    <module>Room14</module>
-    <module>Room15</module>
-    <module>Room16</module>
-    <module>Room17</module>
-    <module>Room18</module>
-    <module>Room19</module>
-    <module>Room20</module>
+    <module>DiamondRoom6</module>
+    <module>DiamondRoom7</module>
+    <module>DiamondRoom8</module>
+    <module>DiamondRoom9</module>
+    <module>DiamondRoom10</module>
+    <module>DiamondRoom11</module>
+    <module>DiamondRoom12</module>
+    <module>DiamondRoom13</module>
+    <module>DiamondRoom14</module>
+    <module>DiamondRoom15</module>
+    <module>DiamondRoom16</module>
+    <module>DiamondRoom17</module>
+    <module>DiamondRoom18</module>
+    <module>DiamondRoom19</module>
+    <module>DiamondRoom20</module>
   </modules>
 
   <inceptionYear>2023</inceptionYear>

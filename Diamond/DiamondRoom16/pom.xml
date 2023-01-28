@@ -7,11 +7,11 @@
     <version>2023.0.0</version>
   </parent>
   <groupId>edu.pdx.cs410J.diamond</groupId>
-  <artifactId>Room13</artifactId>
+  <artifactId>DiamondRoom16</artifactId>
   <version>2023.0.0</version>
   <packaging>jar</packaging>
 
-  <name>Diamond Room 13</name>
+  <name>Diamond Room 16</name>
   <url>http://www.cs.pdx.edu</url>
 
   <developers>
@@ -38,7 +38,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.pdx.cs410J.room13.DiamondRoom13</mainClass>
+              <mainClass>edu.pdx.cs410J.room16.DiamondRoom16</mainClass>
             </manifest>
           </archive>
         </configuration>
