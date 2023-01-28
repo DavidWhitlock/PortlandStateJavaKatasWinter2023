@@ -5,8 +5,8 @@ import com.google.common.annotations.VisibleForTesting;
 public class LeapYearRoom3 {
 /**
 if NUMBER is divisible by 4, 100, 400 = LEAP YEAR (True)
-if NUMBER is divisible by 4, 400 && NOT 100 = LEAP YEAR
-if NUMBER is divisible by 4 && NOT 100, NOT 400 = LEAP YEAR
+if NUMBER is divisible by 4, 400 &amp;&amp; NOT 100 = LEAP YEAR
+if NUMBER is divisible by 4 &amp;&amp; NOT 100, NOT 400 = LEAP YEAR
 
 else FALSE
  **/

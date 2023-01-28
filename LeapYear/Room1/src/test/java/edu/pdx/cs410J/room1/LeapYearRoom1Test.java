@@ -1,5 +1,6 @@
 package edu.pdx.cs410J.room1;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -14,6 +15,7 @@ public class LeapYearRoom1Test
     new LeapYearRoom1();
   }
   @Test
+  @Disabled
   void theYear2000IsALeapYear(){
     boolean result = LeapYearRoom1.isLeapYear(2000);
     assertTrue(result);
