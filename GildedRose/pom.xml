@@ -6,7 +6,7 @@
     <groupId>edu.pdx.cs410J.katas</groupId>
     <version>2023.0.0</version>
   </parent>
-  <groupId>edu.pdx.cs410J.pairing</groupId>
+  <groupId>edu.pdx.cs410J.mobbing</groupId>
   <artifactId>GildedRose</artifactId>
   <version>2023.0.0</version>
   <packaging>jar</packaging>
