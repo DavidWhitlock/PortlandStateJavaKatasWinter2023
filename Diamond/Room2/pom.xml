@@ -6,7 +6,7 @@
     <groupId>edu.pdx.cs410J.katas</groupId>
     <version>2023.0.0</version>
   </parent>
-  <groupId>edu.pdx.cs410J.leapyear</groupId>
+  <groupId>edu.pdx.cs410J.diamond</groupId>
   <artifactId>Room2</artifactId>
   <version>2023.0.0</version>
   <packaging>jar</packaging>
