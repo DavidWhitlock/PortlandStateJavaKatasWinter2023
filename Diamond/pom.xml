@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>PortlandStateJavaKatasWinter2023</artifactId>
+    <groupId>edu.pdx.cs410J.katas</groupId>
+    <version>2023.0.0</version>
+  </parent>
+
+  <artifactId>Diamond</artifactId>
+  <version>2023.0.0</version>
+
+  <packaging>pom</packaging>
+  <name>Diamond Katas</name>
+  <description>Parent project for the Diamond katas </description>
+
+  <modules>
+    <module>DiamondRoom1</module>
+    <module>DiamondRoom2</module>
+    <module>DiamondRoom3</module>
+    <module>DiamondRoom4</module>
+    <module>DiamondRoom5</module>
+    <module>DiamondRoom6</module>
+    <module>DiamondRoom7</module>
+    <module>DiamondRoom8</module>
+    <module>DiamondRoom9</module>
+    <module>DiamondRoom10</module>
+    <module>DiamondRoom11</module>
+    <module>DiamondRoom12</module>
+    <module>DiamondRoom13</module>
+    <module>DiamondRoom14</module>
+    <module>DiamondRoom15</module>
+    <module>DiamondRoom16</module>
+    <module>DiamondRoom17</module>
+    <module>DiamondRoom18</module>
+    <module>DiamondRoom19</module>
+    <module>DiamondRoom20</module>
+  </modules>
+
+  <inceptionYear>2023</inceptionYear>
+  <organization>
+    <name>Portland State University</name>
+    <url>http://www.pdx.edu</url>
+  </organization>
+
+</project>
