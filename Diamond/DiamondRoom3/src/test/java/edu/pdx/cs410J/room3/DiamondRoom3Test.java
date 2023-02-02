@@ -53,4 +53,29 @@ public class DiamondRoom3Test
   {
     assertThat(DiamondRoom3.ToChar(1), equalTo('A'));
   }
+
+  @Test
+  void returnDiamondA() {
+    String result = "A";
+    assertThat(DiamondRoom3.returnDiamond('A'),equalTo(result));
+  }
+ @Test
+ void returnDiamondB() {
+  String result = " A\n" +
+          "B  B\n" +
+          " A\n";
+  assertThat(DiamondRoom3.returnDiamond('B'),equalTo(result));
+ }
+ @Test
+ void returnDiamondC() {
+  String result = "  A\n" +
+                  " B  B\n" +
+                  "C    C\n" +
+                  " B  B\n" +
+                  "  A\n";
+             ;
+  assertThat(DiamondRoom3.returnDiamond('C'),equalTo(result));
+ }
+
+
 }
