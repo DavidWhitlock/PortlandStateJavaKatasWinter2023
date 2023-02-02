@@ -18,6 +18,10 @@ public class RomanNumerals {
       case 3: return "III";
       case 4: return "IV";
       case 5: return "V";
+      case 6:
+      case 7:
+      case 8:
+        return romanNumeral(5) + romanNumeral(number - 5);
 
       default:  return "";
     }
