@@ -16,12 +16,16 @@
 
   <developers>
     <developer>
-      <id>student1</id>
+      <id>Polly</id>
       <name>Pair Programmer1</name>
     </developer>
     <developer>
-      <id>student2</id>
+      <id>Logan</id>
       <name>Pair Programmer2</name>
+    </developer>
+    <developer>
+      <id>Leo</id>
+      <name>Pair Programmer3</name>
     </developer>
   </developers>
 
