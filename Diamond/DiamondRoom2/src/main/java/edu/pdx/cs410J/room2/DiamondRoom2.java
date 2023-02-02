@@ -10,35 +10,42 @@ public class DiamondRoom2 {
       return "A";
     String pattern = "";
 
-    int spaces = ch - 'A' ; //For B, it will be 1
-    //Line 1
-    for(int i=1; i<=spaces; i++){
-      pattern += " ";
-    }
-    pattern += "A";
-    for(int i=1; i<=spaces; i++){
-      pattern += " ";
-    }
-    pattern += "\n"; //marks the end of line
 
-    //Line 2
-    pattern += ch;
-    for(int i=1; i<=spaces+1; i++){
-      pattern += " ";
+    for(int i = 65; i<=ch; i++) {
+      int spaces = ch - i ;
+      for (int j = 1; j<= spaces; j++) {
+        pattern += " ";
+      }
+      pattern += (char)i;
+      if(i != 65) {
+        for (int j = 1; j<= spaces+1; j++) {
+          pattern += " ";
+        }
+        pattern += (char)i;
+      }
+      for (int j = 1; j<= spaces; j++) {
+        pattern += " ";
+      }
+      pattern += "\n";
     }
-    pattern += ch;
-    pattern += "\n"; //marks the end of line
-
-    //Line 3
-    for(int i=1; i<=spaces; i++){
-      pattern += " ";
+    for(int i = ch-1; i>=65; i--) {
+      int spaces = ch - i ;
+      for (int j = 1; j<= spaces; j++) {
+        pattern += " ";
+      }
+      pattern += (char)i;
+      if(i != 65) {
+        for (int j = 1; j<= spaces+1; j++) {
+          pattern += " ";
+        }
+        pattern += (char)i;
+      }
+      for (int j = 1; j<= spaces; j++) {
+        pattern += " ";
+      }
+      pattern += "\n";
     }
-    pattern += "A";
-    for(int i=1; i<=spaces; i++){
-      pattern += " ";
-    }
-
-
+    System.out.println(pattern);
     return pattern;
   }
 

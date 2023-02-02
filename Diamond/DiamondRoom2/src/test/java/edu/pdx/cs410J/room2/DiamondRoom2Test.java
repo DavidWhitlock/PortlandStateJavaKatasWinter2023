@@ -12,7 +12,7 @@ public class DiamondRoom2Test
 
   @Test
   void printsTheCorrectPatternForB(){
-    assertThat(DiamondRoom2.createDiamond('B'), equalTo(" A \nB  B\n A "));
+    assertThat(DiamondRoom2.createDiamond('B'), equalTo(" A \nB B\n A \n"));
   }
 
 }
