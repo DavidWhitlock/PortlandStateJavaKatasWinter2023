@@ -4,6 +4,7 @@ import org.checkerframework.dataflow.qual.TerminatesExecution;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 
 public class DiamondRoom18Test
@@ -27,6 +28,15 @@ public class DiamondRoom18Test
   void returnWidth7ForD() {
     String[] args = {"d"};
     assertThat(DiamondRoom18.returnLineWidth(args), equalTo(7));
+  }
+
+  @Test
+  void printsLetterDiamondForInputC() {
+    String[] alphabet = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+    int line = 0;
+    int lineWidth = 5;
+    DiamondRoom18.printLetterDiamond(lineWidth,line,alphabet);
+    assertThat(true, equalTo(true));
   }
 
 }

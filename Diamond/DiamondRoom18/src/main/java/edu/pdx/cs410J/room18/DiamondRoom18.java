@@ -23,14 +23,32 @@ public class DiamondRoom18 {
    * <p>Recursive function to print letter diamond</p>
    * @param
    */
-  public static void printLetterDiamond(int lineWidth, int line) {
-    //
+  public static void printLetterDiamond(int lineWidth, int line, String[] alphabet) {
     // Step 1: get center point, where A will be printed
-    if(line == 0)
+    //int line increments
+
+    //VARIABLES
+    char printLetter = alphabet[line].charAt(0);
+    int secondSpace = 0;
     int midPoint = lineWidth/2;
+    System.out.println(midPoint);
 
+    if(midPoint - line == 0){
+      System.out.println(String.format(MessageFormat.format("%{0}c%{1}c",(midPoint-line), line), printLetter, printLetter));
+      return;
+    }
 
-    System.out.println(String.format(MessageFormat.format("%{0}c",lineWidth)));
+    //increment middle spacing +1 every time, until it reaches
+    //stop recursion when: (1) midPoint - lineWidth == 0, (2) or if printLetter is our User input
+
+    if(printLetter == 'A') {
+      System.out.println(String.format(MessageFormat.format("%{0}c",midPoint), printLetter));
+    }
+    else {
+      System.out.println(String.format(MessageFormat.format("%{0}c%{1}c",(midPoint-line), line), printLetter, printLetter));
+    }
+    line++;
+    printLetterDiamond(lineWidth, line, alphabet);
   }
   @VisibleForTesting
   public static void main(String[] args) {
