@@ -9,7 +9,6 @@ public class DiamondRoom4Test
 
   @Test
   void canInstantiateKataClass() {
-
     new DiamondRoom4();
   }
   @Test
@@ -20,8 +19,17 @@ public class DiamondRoom4Test
     }
   }
   @Test
+  void lettersAreAlphanumeric(){
+    DiamondRoom4 dr4 = new DiamondRoom4();
+    char t = 'i';
+    for (String c: dr4.lettersInOrder){
+      t = c.charAt(0);
+      assertThat(Character.isLetter(t), equalTo(true));
+    }
+  }
+  @Test
   void onlyOneSpacePerCharacter(){
-
+    DiamondRoom4 dr4 = new DiamondRoom4();
   }
 
 }
