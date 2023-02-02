@@ -10,7 +10,7 @@ public class DiamondRoom2 {
       return "A";
     String pattern = "";
 
-
+    int internalSpaces = 1;
     for(int i = 65; i<=ch; i++) {
       int spaces = ch - i ;
       for (int j = 1; j<= spaces; j++) {
@@ -18,16 +18,18 @@ public class DiamondRoom2 {
       }
       pattern += (char)i;
       if(i != 65) {
-        for (int j = 1; j<= spaces+1; j++) {
+        for (int j = 1; j<= internalSpaces; j++) {
           pattern += " ";
         }
         pattern += (char)i;
+        internalSpaces+=2;
       }
       for (int j = 1; j<= spaces; j++) {
         pattern += " ";
       }
       pattern += "\n";
     }
+    internalSpaces-=2;
     for(int i = ch-1; i>=65; i--) {
       int spaces = ch - i ;
       for (int j = 1; j<= spaces; j++) {
@@ -35,7 +37,8 @@ public class DiamondRoom2 {
       }
       pattern += (char)i;
       if(i != 65) {
-        for (int j = 1; j<= spaces+1; j++) {
+        internalSpaces-=2;
+        for (int j = 1; j<= internalSpaces; j++) {
           pattern += " ";
         }
         pattern += (char)i;
