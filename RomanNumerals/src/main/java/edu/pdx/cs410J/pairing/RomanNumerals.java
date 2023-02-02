@@ -21,7 +21,10 @@ public class RomanNumerals {
 
   private static void romanNumeral(StringBuilder sb, int number) {
 
-    if (number >= 10) {
+    if (number == 40) {
+      sb.append("XL");
+
+    } else if (number >= 10) {
       sb.append("X");
       romanNumeral(sb, number - 10);
 

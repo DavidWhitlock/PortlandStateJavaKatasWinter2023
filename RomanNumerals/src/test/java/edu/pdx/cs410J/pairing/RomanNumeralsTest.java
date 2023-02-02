@@ -30,20 +30,39 @@ public class RomanNumeralsTest
     assertThat(RomanNumerals.romanNumeral(6), equalTo("VI"));
   }
 
+  @Test
   void romanNumeralFor7IsVII() {
     assertThat(RomanNumerals.romanNumeral(7), equalTo("VII"));
   }
 
+  @Test
   void romanNumeralFor8IsVIII() {
     assertThat(RomanNumerals.romanNumeral(8), equalTo("VIII"));
   }
 
+  @Test
   void romanNumeralFor9IsIX() {
     assertThat(RomanNumerals.romanNumeral(9), equalTo("IX"));
   }
 
+  @Test
   void romanNumeralFor10IsX() {
     assertThat(RomanNumerals.romanNumeral(10), equalTo("X"));
+  }
+
+  @Test
+  void romanNumeralFor20IsXX() {
+    assertThat(RomanNumerals.romanNumeral(20), equalTo("XX"));
+  }
+
+  @Test
+  void romanNumeralFor39IsXXXIX() {
+    assertThat(RomanNumerals.romanNumeral(39), equalTo("XXXIX"));
+  }
+
+  @Test
+  void romanNumeralFor40IsXL() {
+    assertThat(RomanNumerals.romanNumeral(40), equalTo("XL"));
   }
 
   @Test
