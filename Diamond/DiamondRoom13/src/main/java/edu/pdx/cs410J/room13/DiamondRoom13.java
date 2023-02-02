@@ -8,4 +8,8 @@ public class DiamondRoom13 {
   public static void main(String[] args) {
     System.err.println("Missing command line arguments");
   }
+
+  public static String diamond(char c) {
+    return "A";
+  }
 }
