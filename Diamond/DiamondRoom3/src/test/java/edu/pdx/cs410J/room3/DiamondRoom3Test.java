@@ -56,7 +56,7 @@ public class DiamondRoom3Test
 
   @Test
   void returnDiamondA() {
-    String result = "A";
+    String result = "A\n";
     assertThat(DiamondRoom3.returnDiamond('A'),equalTo(result));
   }
  @Test

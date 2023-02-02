@@ -27,7 +27,29 @@ public class DiamondRoom3 {
         builder.append(" ");
       }
       builder.append(ToChar(i));
-      builder.append("\n");
+      if (i!= 1) {
+        for (int j = 0; j < 2*(i - 1); j++) {
+          builder.append(" ");
+        }
+        builder.append(ToChar(i));
+      }
+        builder.append("\n");
+    }
+
+    for(int i = height - 1; i > 0; i--) {
+      for (int j = 0; j < (height - i); j++) {
+        builder.append(" ");
+      }
+      builder.append(ToChar(i));
+      if (i!= 1) {
+        for (int j = 0; j < 2*(i - 1); j++) {
+          builder.append(" ");
+        }
+        builder.append(ToChar(i));
+      }
+      if (height != 1){
+        builder.append("\n");
+      }
     }
     return builder.toString();
   }
