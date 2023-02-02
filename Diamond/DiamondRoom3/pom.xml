@@ -16,13 +16,15 @@
 
   <developers>
     <developer>
-      <id>Matthew Cole</id>
-      <name>Pair Programmer1</name>
+      <id>student1</id>
+      <name>Matthew Cole</name>
     </developer>
     <developer>
       <id>student2</id>
-      <name>Pair Programmer2</name>
+      <name>Devon Fox</name>
     </developer>
+    <id>student3</id>
+    <name>Shatabdi Pal</name>
   </developers>
 
   <properties>
