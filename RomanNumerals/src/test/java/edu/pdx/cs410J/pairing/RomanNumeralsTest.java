@@ -38,6 +38,14 @@ public class RomanNumeralsTest
     assertThat(RomanNumerals.romanNumeral(8), equalTo("VIII"));
   }
 
+  void romanNumeralFor9IsIX() {
+    assertThat(RomanNumerals.romanNumeral(9), equalTo("IX"));
+  }
+
+  void romanNumeralFor10IsX() {
+    assertThat(RomanNumerals.romanNumeral(10), equalTo("X"));
+  }
+
   @Test
   @Disabled
   void romanNumeralFor50IsXC() {

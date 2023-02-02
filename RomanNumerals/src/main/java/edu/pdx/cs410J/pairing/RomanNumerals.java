@@ -12,18 +12,32 @@ public class RomanNumerals {
 
   public static String romanNumeral(int number) {
 
-    switch(number) {
-      case 1: return "I";
-      case 2: return "II";
-      case 3: return "III";
-      case 4: return "IV";
-      case 5: return "V";
-      case 6:
-      case 7:
-      case 8:
-        return romanNumeral(5) + romanNumeral(number - 5);
+    StringBuilder sb = new StringBuilder();
 
-      default:  return "";
+    romanNumeral(sb, number);
+
+    return sb.toString();
+  }
+
+  private static void romanNumeral(StringBuilder sb, int number) {
+
+    if (number >= 10) {
+      sb.append("X");
+      romanNumeral(sb, number - 10);
+
+    } else if (number == 9) {
+      sb.append("IX");
+
+    } else if (number >= 5) {
+      sb.append("V");
+      romanNumeral(sb, number - 5);
+
+    } else if (number == 4) {
+      sb.append("IV");
+
+    } else if (number >= 1) {
+      sb.append("I");
+      romanNumeral(sb, number - 1);
     }
 
   }
