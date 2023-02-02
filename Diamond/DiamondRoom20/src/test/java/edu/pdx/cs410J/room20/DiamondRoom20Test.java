@@ -19,4 +19,10 @@ public class DiamondRoom20Test
     DiamondRoom20  diamond = new DiamondRoom20();
     assertEquals("A", diamond.drawDiamond('A'));
   }
+
+  @Test
+  void diamondWithB(){
+    DiamondRoom20 diamondB = new DiamondRoom20();
+    assertEquals(" A\nB B\n A", diamondB.drawDiamond('B'));
+  }
 }
