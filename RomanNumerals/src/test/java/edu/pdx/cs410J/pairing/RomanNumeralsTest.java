@@ -14,6 +14,24 @@ public class RomanNumeralsTest
     assertThat(result, equalTo("I"));
   }
 
+  @Test
+  void romanNumeralFor4IsIV() {
+    assertThat(RomanNumerals.romanNumeral(4), equalTo("IV"));
+  }
 
+  @Test
+  void romanNumeralFor50IsXC() {
+    assertThat(RomanNumerals.romanNumeral(50), equalTo("XC"));
+  }
+
+  @Test
+  void romanNumeralFor45IsXLV() {
+    assertThat(RomanNumerals.romanNumeral(50), equalTo("XLV"));
+  }
+
+  @Test
+  void romanNumeralFor49IsXLIX() {
+    assertThat(RomanNumerals.romanNumeral(49), equalTo("XLIX"));
+  }
 
 }
