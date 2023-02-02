@@ -1,5 +1,6 @@
 package edu.pdx.cs410J.room18;
 
+import org.checkerframework.dataflow.qual.TerminatesExecution;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -14,6 +15,18 @@ public class DiamondRoom18Test
     int numberA = (int) 'A';
     int result = numberUserInput - numberA;
     assertThat(result, equalTo(10));
+  }
+
+  @Test
+  void returnWidth5ForC() {
+    String[] args = {"C"};
+    assertThat(DiamondRoom18.returnLineWidth(args), equalTo(5));
+  }
+
+  @Test
+  void returnWidth7ForD() {
+    String[] args = {"d"};
+    assertThat(DiamondRoom18.returnLineWidth(args), equalTo(7));
   }
 
 }
