@@ -20,6 +20,11 @@ public class RomanNumeralsTest
   }
 
   @Test
+  void romanNumeralFor5IsV() {
+    assertThat(RomanNumerals.romanNumeral(5), equalTo("V"));
+  }
+
+  @Test
   void romanNumeralFor50IsXC() {
     assertThat(RomanNumerals.romanNumeral(50), equalTo("XC"));
   }
