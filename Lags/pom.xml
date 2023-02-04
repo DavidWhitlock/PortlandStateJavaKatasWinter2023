@@ -17,6 +17,10 @@
 
   <modules>
     <module>LagsRoom1</module>
+    <module>LagsRoom2</module>
+    <module>LagsRoom3</module>
+    <module>LagsRoom4</module>
+    <module>LagsRoom5</module>
   </modules>
 
   <inceptionYear>2023</inceptionYear>
