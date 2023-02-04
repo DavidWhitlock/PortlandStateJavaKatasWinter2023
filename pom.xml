@@ -28,6 +28,7 @@ accordingly
     <module>LeapYear</module>
     <module>RomanNumerals</module>
     <module>Diamond</module>
+    <module>Lags</module>
     <module>GildedRose</module>
   </modules>
 
