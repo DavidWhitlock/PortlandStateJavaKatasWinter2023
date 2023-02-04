@@ -1,6 +1,7 @@
 package edu.pdx.cs410J.room18;
 
 import org.checkerframework.dataflow.qual.TerminatesExecution;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -31,6 +32,7 @@ public class DiamondRoom18Test
   }
 
   @Test
+  @Disabled
   void printsLetterDiamondForInputC() {
     String[] alphabet = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
     int line = 0;

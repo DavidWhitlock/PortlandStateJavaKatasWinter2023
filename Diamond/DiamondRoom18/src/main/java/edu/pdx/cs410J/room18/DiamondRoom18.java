@@ -21,7 +21,6 @@ public class DiamondRoom18 {
 
   /**
    * <p>Recursive function to print letter diamond</p>
-   * @param
    */
   public static void printLetterDiamond(int lineWidth, int line, String[] alphabet) {
     // Step 1: get center point, where A will be printed
