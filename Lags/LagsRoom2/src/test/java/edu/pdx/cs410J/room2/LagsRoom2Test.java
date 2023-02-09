@@ -29,4 +29,22 @@ public class LagsRoom2Test
     assertThat(flight.end, equalTo(2));
     assertThat(flight.cost, equalTo(3));
   }
+
+  @Test
+  void overlappingFlightsAreMarkedIncompatible() {
+    Flight flight1 = new Flight("A 0 5 10");
+    Flight flight2 = new Flight("A 0 5 10");
+    assertThat(LagsRoom2.checkCompatible(flight1,flight2),equalTo(false));
+  }
+  @Test
+  void notOverlappingFlightsAreMarkedCompatible() {
+    Flight flight1 = new Flight("A 0 5 10");
+    Flight flight2 = new Flight("A 5 10 10");
+    assertThat(LagsRoom2.checkCompatible(flight1,flight2),equalTo(true));
+  }
+
+  @Test
+  void bestChoiceMethodReturnsCorrectValue(){
+    assertThat(LagsRoom2.bestChoice(),equalTo(18));
+  }
 }
