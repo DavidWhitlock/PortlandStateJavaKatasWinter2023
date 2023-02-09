@@ -12,4 +12,12 @@ public class Request {
         this.duration = dur;
         this.price = prc;
     }
+
+    public String getName(){
+        return this.name;
+    }
+    public int getPrice(){
+        return this.price;
+    }
+
 }
