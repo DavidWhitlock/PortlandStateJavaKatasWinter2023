@@ -48,7 +48,7 @@ public class LagsRoom10 {
         if(i == j){
           continue;
         }
-        if(lagList.get(j).comesBefore(lagList.get(currentEnd))){
+        if(!lagList.get(currentEnd).comesBefore(lagList.get(j))){
           continue;
         }
         temp += lagList.get(j).profit;
