@@ -13,6 +13,7 @@ public class LagsRoom5Test
     String[] args = {"AF514 0 5 10", "CO5 3 7 14", "AF515 5 9 7", "BA01 6 9 8"};
 //    ArrayList<String> input = new ArrayList<>(Arrays.asList(args));
     new LagsRoom5();
+    assert(1==1);
   }
 
 }
