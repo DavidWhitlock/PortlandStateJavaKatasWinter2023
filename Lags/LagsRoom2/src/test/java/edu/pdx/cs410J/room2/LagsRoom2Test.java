@@ -45,6 +45,19 @@ public class LagsRoom2Test
 
   @Test
   void bestChoiceMethodReturnsCorrectValue(){
-    assertThat(LagsRoom2.bestChoice(),equalTo(18));
+    assertThat(LagsRoom2.bestChoice(LagsRoom2.flightList),equalTo(18));
+  }
+  @Test
+  void bestChoiceMethodReturnsCorrectValueFor2(){
+    assertThat(LagsRoom2.bestChoice(LagsRoom2.flightList2),equalTo(22));
+  }
+
+  @Test
+  void createsFlightList() {
+    String [] flightList = {"AF514 0 5 10", "CO5 3 7 14"};
+    Flight [] flightArray = LagsRoom2.createFlights(flightList);
+    assertThat(flightArray[0].flight, equalTo("AF514"));
+    assertThat(flightArray[1].start, equalTo(3));
+    assertThat(flightArray[0].end, equalTo(5));
   }
 }
