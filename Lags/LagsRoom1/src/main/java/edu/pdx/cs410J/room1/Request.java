@@ -6,6 +6,13 @@ public class Request {
     int duration;
     int price;
 
+    public Request(String name, int prc){
+        this.name = name;
+        this.startTime = 0;
+        this.duration = 0;
+        this.price = prc;
+
+    }
     public Request(String name, int start, int dur, int prc){
         this.name = name;
         this.startTime = start;
