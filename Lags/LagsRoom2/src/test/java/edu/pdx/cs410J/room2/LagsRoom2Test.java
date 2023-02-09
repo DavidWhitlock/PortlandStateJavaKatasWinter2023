@@ -22,5 +22,11 @@ public class LagsRoom2Test
   }
 
   @Test
-  void
+  void testFlightConstructor() {
+    Flight flight = new Flight("A 1 2 3");
+    assertThat(flight.flight, equalTo("A"));
+    assertThat(flight.start, equalTo(1));
+    assertThat(flight.end, equalTo(2));
+    assertThat(flight.cost, equalTo(3));
+  }
 }
