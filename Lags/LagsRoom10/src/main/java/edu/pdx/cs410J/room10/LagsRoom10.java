@@ -2,15 +2,23 @@ package edu.pdx.cs410J.room10;
 
 import com.google.common.annotations.VisibleForTesting;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LagsRoom10 {
 
   public Lag lag = null;
+  public List<Lag> lagList = new ArrayList<>();
 
+
+  public LagsRoom10(){
+
+  }
   public LagsRoom10(String name, int startTime, int endTime, int profit){
-    lag = new Lag(name, startTime, endTime, profit);
+      lag = new Lag(name, startTime, endTime, profit);
   }
 
-  class Lag {
+  static class Lag {
     public String name = "";
     public int startTime = 0;
     public int endTime = 0;
@@ -25,6 +33,6 @@ public class LagsRoom10 {
   }
   @VisibleForTesting
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
+
   }
 }
