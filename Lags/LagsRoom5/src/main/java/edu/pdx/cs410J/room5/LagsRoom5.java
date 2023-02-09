@@ -10,7 +10,7 @@ import static java.lang.Integer.parseInt;
 
 public class LagsRoom5 {
 
-    private Map<String[], Integer> memo = new HashMap<>();
+    private Map<Integer, String[]> memo = new HashMap<>();
 
 
     @VisibleForTesting
@@ -19,7 +19,7 @@ public class LagsRoom5 {
         System.err.println("Missing command line arguments");
     }
 
-    public void memoize(String[] args) {
+    public int memoize(String[] args) {
         int flightTime = 0;
         if (args.length == 0) {
             return Collections.min(memo.keySet());
@@ -34,7 +34,9 @@ public class LagsRoom5 {
         } catch (Exception e) {
             throw new NumberFormatException(e.getMessage());
         }
-
-        if memo.containsKey()
+        if (memo.containsValue(args)) {
+          return memo.entrySet().stream().filter(entry -> args == entry.getValue()).map(Map.Entry::getKey);
+        }
+//        if memo.containsKey()
     }
 }

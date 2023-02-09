@@ -30,7 +30,38 @@ public class LagsRoom10 {
       this.endTime = endTime;
       this.profit = profit;
     }
+
+    public boolean comesBefore(Lag o){
+      if(this.endTime < o.startTime)
+        return true;
+      return false;
+    }
   }
+
+  public int maxProfit(){
+    int max = 0;
+
+    for(int i = 0; i < lagList.size(); ++i){
+      int temp = lagList.get(i).profit;
+      int currentEnd = i;
+      for(int j = 0; j < lagList.size(); ++j){
+        if(i == j){
+          continue;
+        }
+        if(!lagList.get(currentEnd).comesBefore(lagList.get(j))){
+          continue;
+        }
+        temp += lagList.get(j).profit;
+        currentEnd = j;
+        if(temp > max){
+          max = temp;
+        }
+      }
+    }
+
+    return max;
+  }
+
   @VisibleForTesting
   public static void main(String[] args) {
 

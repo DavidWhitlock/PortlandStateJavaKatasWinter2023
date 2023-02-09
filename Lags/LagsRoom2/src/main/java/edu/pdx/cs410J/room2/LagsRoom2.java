@@ -4,11 +4,15 @@ import com.google.common.annotations.VisibleForTesting;
 
 import java.util.ArrayList;
 
+
 public class LagsRoom2 {
 
+
+  String [] flightList = {"AF514 0 5 10", "CO5 3 7 14", "AF515 5 9 7", "BA01 6 9 8" };
   @VisibleForTesting
   public static void main(String[] args) {
-    ArrayList flightList = new ArrayList<String>();
+
+
 
   }
 
@@ -17,13 +21,22 @@ public class LagsRoom2 {
     return input.split(" ");
   }
 
-  public static void populateList(ArrayList<String> list){
-    String flight1 = "AF514 0 5 10";
-    String flight2 = "CO5 3 7 14";
-    String flight3 = "AF515 5 9 7";
-    String flight4 = "BA01 6 9 8";
-    for(){
-
+  public static boolean checkCompatible(Flight flight1, Flight flight2){
+    Flight earlier, later;
+    if(flight1.start == flight2.start){
+      return false;
     }
+    else if(flight1.start < flight2.start){
+      earlier = flight1;
+      later = flight2;
+    }
+    else{
+      earlier = flight2;
+      later = flight1;
+    }
+    if(later.start<earlier.end){
+      return false;
+    }
+    return true;
   }
 }
