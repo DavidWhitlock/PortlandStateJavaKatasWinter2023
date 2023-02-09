@@ -17,11 +17,11 @@
   <developers>
     <developer>
       <id>student1</id>
-      <Polina>Pair Programmer1</PolinaKulehova>
+      <name>Polina</name>
     </developer>
     <developer>
       <id>student2</id>
-      <Andrew>Pair Programmer2</Andrew Bonham>
+      <name>Andrew</name>
     </developer>
   </developers>
 
