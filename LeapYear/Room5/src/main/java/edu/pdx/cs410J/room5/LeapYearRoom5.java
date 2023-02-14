@@ -23,7 +23,14 @@ public class LeapYearRoom5 {
   @VisibleForTesting
   public static void main(String[] args) {
     int year = Integer.parseInt(args[0]);
-    if(year < 0)
+    if(year < 0){
       System.err.println("Invalid argument");
+    }
+    else{
+      if(isLeapYear(year))
+        System.out.println(year + " is a leap year.");
+      else
+        System.out.println(year + " is not a leap year.");
+    }
   }
 }
