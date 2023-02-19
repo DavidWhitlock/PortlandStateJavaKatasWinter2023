@@ -7,11 +7,11 @@
     <version>2023.0.0</version>
   </parent>
   <groupId>edu.pdx.cs410J.BankOCR</groupId>
-  <artifactId>BankOCRRoom1</artifactId>
+  <artifactId>BankOCRRoom2</artifactId>
   <version>2023.0.0</version>
   <packaging>jar</packaging>
 
-  <name>BankOCR Room 1</name>
+  <name>BankOCR Room 2</name>
   <url>http://www.cs.pdx.edu</url>
 
   <developers>
