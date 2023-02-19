@@ -11,7 +11,7 @@
   <version>2023.0.0</version>
   <packaging>jar</packaging>
 
-  <name>RomanNumerals Project</name>
+  <name>Tennis Project</name>
   <description>The Tennis Kata</description>
   <url>http://www.cs.pdx.edu</url>
 
