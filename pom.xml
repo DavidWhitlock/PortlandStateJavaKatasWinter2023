@@ -27,6 +27,7 @@ accordingly
     <module>FizzBuzz</module>
     <module>LeapYear</module>
     <module>RomanNumerals</module>
+    <module>Tennis</module>
   </modules>
 
   <inceptionYear>2023</inceptionYear>
