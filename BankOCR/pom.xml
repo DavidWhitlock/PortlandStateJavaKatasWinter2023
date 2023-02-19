@@ -18,13 +18,11 @@
   <modules>
     <module>BankOCRRoom1</module>
     <module>BankOCRRoom2</module>
-    <!--
     <module>BankOCRRoom3</module>
     <module>BankOCRRoom4</module>
     <module>BankOCRRoom5</module>
     <module>BankOCRRoom6</module>
     <module>BankOCRRoom7</module>
-    -->
   </modules>
 
   <inceptionYear>2023</inceptionYear>
