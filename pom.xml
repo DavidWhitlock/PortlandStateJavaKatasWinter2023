@@ -29,6 +29,7 @@ accordingly
     <module>RomanNumerals</module>
     <module>Diamond</module>
     <module>Lags</module>
+    <module>Tennis</module>
     <module>BankOCR</module>
     <module>GildedRose</module>
   </modules>
