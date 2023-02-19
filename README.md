@@ -1,3 +1,5 @@
+The [Gilded Rose Kata](GildedRose) is attributed to Emily Bache: https://github.com/emilybache/GildedRose-Refactoring-Kata
+
 [![Java CI with Maven](https://github.com/YourGitHubId/PortlandStateJavaWinter2023/actions/workflows/maven.yml/badge.svg)](https://github.com/YourGitHubId/PortlandStateJavaWinter2023/actions/workflows/maven.yml)
 
 # Getting Started with Advanced Programming with Java

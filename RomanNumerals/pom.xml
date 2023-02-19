@@ -41,35 +41,35 @@
     </developer>
     <developer>
       <id>student2</id>
-      <name>Student Volunteer2</name>
+      <name>Devon Fox</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
       <id>student3</id>
-      <name>Student Volunteer3</name>
+      <name>David Baker-Robinson</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
       <id>student4</id>
-      <name>Student Volunteer4</name>
+      <name>Christian Torralba</name>
       <roles>
-        <role>Choose Driver or Navigator for your initial pairing role</role>
+        <role>Driver</role>
       </roles>
     </developer>
     <developer>
       <id>student5</id>
-      <name>Student Volunteer5</name>
+      <name>Daniel Trang</name>
       <roles>
         <role>Choose Driver or Navigator for your initial pairing role</role>
       </roles>
     </developer>
     <developer>
       <id>student6</id>
-      <name>Student Volunteer6</name>
+      <name>David BR(If no other volunteers)</name>
       <roles>
         <role>Choose Driver or Navigator for your initial pairing role</role>
       </roles>

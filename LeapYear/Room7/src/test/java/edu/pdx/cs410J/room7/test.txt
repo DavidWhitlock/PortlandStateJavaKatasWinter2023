@@ -1,0 +1,14 @@
+UT
+4000 : leap year (divisible by 400)
+1700 : not leap year (divisible by 100 but not 400)
+2880 : leap year (divisible by 4 but not by 100)
+2017 : not leap year (not divisible by 4)
+
+IT
+no arguments
+abcd
+4000 : leap year (divisible by 400)
+1700 : not leap year (divisible by 100 but not 400)
+2880 : leap year (divisible by 4 but not by 100)
+2017 : not leap year (not divisible by 4)
+more than 1 arguments
