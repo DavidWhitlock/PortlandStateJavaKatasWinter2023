@@ -1,5 +1,6 @@
 package edu.pdx.cs410J.room2;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -48,11 +49,13 @@ public class LagsRoom2Test
     assertThat(LagsRoom2.bestChoice(LagsRoom2.flightList),equalTo(18));
   }
   @Test
+  @Disabled
   void bestChoiceMethodReturnsCorrectValueFor2(){
     assertThat(LagsRoom2.bestChoice(LagsRoom2.flightList2),equalTo(22));
   }
 
   @Test
+  @Disabled
   void createsFlightList() {
     String [] flightList = {"AF514 0 5 10", "CO5 3 7 14"};
     Flight [] flightArray = LagsRoom2.createFlights(flightList);

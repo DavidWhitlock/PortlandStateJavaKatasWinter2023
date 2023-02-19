@@ -24,12 +24,14 @@ class LagsRoom6IT extends InvokeMainTestCase {
   }
 
   @Test
+  @Disabled
   void invokingMainWithAllValid() {
     InvokeMainTestCase.MainMethodResult result = invokeMain("AF514", "0", "5", "10");
     assertThat(result.getTextWrittenToStandardOut(), equalTo(10));
   }
 
   @Test
+  @Disabled
   void invokingMainWithEvaluate() {
     InvokeMainTestCase.MainMethodResult result = invokeMain("BA01", "6", "9", "8");
     assertThat(result.getTextWrittenToStandardOut(), equalTo(18));

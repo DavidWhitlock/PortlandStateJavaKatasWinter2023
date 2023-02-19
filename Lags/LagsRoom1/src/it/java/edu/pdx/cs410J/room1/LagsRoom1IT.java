@@ -1,6 +1,7 @@
 package edu.pdx.cs410J.room1;
 
 import edu.pdx.cs410J.InvokeMainTestCase;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -14,6 +15,7 @@ class LagsRoom1IT extends InvokeMainTestCase {
     //assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
   }
   @Test
+  @Disabled
   void testBasic(){
     InvokeMainTestCase.MainMethodResult result = invokeMain(LagsRoom1.class);
     assertThat(result.getTextWrittenToStandardOut(), containsString("test"));

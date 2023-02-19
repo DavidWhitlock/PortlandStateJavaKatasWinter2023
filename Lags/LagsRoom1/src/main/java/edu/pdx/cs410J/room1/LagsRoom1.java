@@ -31,7 +31,7 @@ public class LagsRoom1 {
       for(int j = i+1; j < requests.size(); ++j){
         if((requests.get(i).duration + requests.get(i).startTime) <= (requests.get(j).startTime)){
           //test(requests.get(j));
-          test(requests.get(i).name + requests.get(j).name,  requests.get(i).price + requests.get(j).price);
+//          test(requests.get(i).name + requests.get(j).name,  requests.get(i).price + requests.get(j).price);
         }
       }//end for
 
@@ -39,7 +39,7 @@ public class LagsRoom1 {
 
     System.out.println("TEST ROUTE:\n");
     //for (int i = 0; i < test.size(); ++i){
-      System.out.println(test.name + " " + test.price);
+//      System.out.println(test.name + " " + test.price);
     //}
 
 
