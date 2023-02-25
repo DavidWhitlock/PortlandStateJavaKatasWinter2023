@@ -32,6 +32,7 @@ accordingly
     <module>Tennis</module>
     <module>BankOCR</module>
     <module>RPNCalculator</module>
+    <module>Minesweeper</module>
     <module>GildedRose</module>
   </modules>
 
