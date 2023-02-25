@@ -31,6 +31,7 @@ accordingly
     <module>Lags</module>
     <module>Tennis</module>
     <module>BankOCR</module>
+    <module>RPNCalculator</module>
     <module>GildedRose</module>
   </modules>
 
