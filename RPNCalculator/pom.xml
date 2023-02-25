@@ -17,14 +17,12 @@
 
   <modules>
     <module>RPNCalculatorRoom1</module>
-<!--
     <module>RPNCalculatorRoom2</module>
     <module>RPNCalculatorRoom3</module>
     <module>RPNCalculatorRoom4</module>
     <module>RPNCalculatorRoom5</module>
     <module>RPNCalculatorRoom6</module>
     <module>RPNCalculatorRoom7</module>
-    -->
   </modules>
 
   <inceptionYear>2023</inceptionYear>
