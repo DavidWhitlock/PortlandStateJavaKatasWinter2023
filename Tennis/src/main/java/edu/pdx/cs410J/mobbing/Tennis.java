@@ -11,10 +11,25 @@ public class Tennis {
     System.err.println("Missing command line arguments");
   }
 
-  public void IncrementPlayerScore() {
+  public void IncrementPlayer1Score() {
     //create a switch here for Score increments
     if (Player1 == Score.LOVE){
       Player1 = Score.FIFTEEN;
+    } else if (Player1 == Score.FIFTEEN){
+      Player1 = Score.THIRTY;
+    } else if (Player1 == Score.THIRTY){
+      Player1 = Score.FORTY;
+    }
+  }
+
+  public void IncrementPlayer2Score() {
+    //create a switch here for Score increments
+    if (Player2 == Score.LOVE){
+      Player2 = Score.FIFTEEN;
+    } else if (Player2 == Score.FIFTEEN){
+      Player2 = Score.THIRTY;
+    } else if (Player2 == Score.THIRTY){
+      Player2 = Score.FORTY;
     }
   }
 
@@ -27,5 +42,9 @@ public class Tennis {
 
   public Score getPlayer1Score() {
     return Player1;
+  }
+
+  public Score getPlayer2Score() {
+    return Player2;
   }
 }

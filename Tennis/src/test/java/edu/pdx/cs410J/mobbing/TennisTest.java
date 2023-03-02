@@ -19,12 +19,29 @@ public class TennisTest {
     assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.LOVE));
   }
 
+
   @Test
-  void incrementPlayerScoreFromLoveTo15() {
+  void incrementPlayer1ScoreFromLoveTo40() {
     Tennis tennis = new Tennis();
     assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.LOVE));
-    tennis.IncrementPlayerScore();
+    tennis.IncrementPlayer1Score();
     assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.FIFTEEN));
+    tennis.IncrementPlayer1Score();
+    assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.THIRTY));
+    tennis.IncrementPlayer1Score();
+    assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.FORTY));
+  }
+
+  @Test
+  void incrementPlayer2ScoreFromLoveTo40() {
+    Tennis tennis = new Tennis();
+    assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.LOVE));
+    tennis.IncrementPlayer2Score();
+    assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.FIFTEEN));
+    tennis.IncrementPlayer2Score();
+    assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.THIRTY));
+    tennis.IncrementPlayer2Score();
+    assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.FORTY));
   }
 
 }
