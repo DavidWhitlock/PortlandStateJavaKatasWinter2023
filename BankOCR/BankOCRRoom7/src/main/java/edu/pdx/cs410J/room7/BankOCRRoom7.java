@@ -11,7 +11,14 @@ public class BankOCRRoom7 {
     System.err.println("Missing command line arguments");
   }
 
-  public void toParseString(String read) {
+  public int validateString(String line) throws Exception {
+    int stringyness = line.length();
 
+    if (stringyness != 27)
+    {
+      throw new Exception("uh oh input was not 27, instead it was: " + stringyness);
+    }
+
+    return stringyness;
   }
 }
