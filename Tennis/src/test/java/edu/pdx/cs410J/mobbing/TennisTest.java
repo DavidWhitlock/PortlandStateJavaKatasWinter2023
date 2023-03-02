@@ -1,5 +1,6 @@
 package edu.pdx.cs410J.mobbing;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
@@ -44,4 +45,25 @@ public class TennisTest {
     assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.FORTY));
   }
 
+  @Test
+  @Disabled
+  void whenBothPlayersHave40Player1ScoringGetAdvantage() {
+    Tennis tennis = new Tennis();
+    tennis.IncrementPlayer1Score();
+    tennis.IncrementPlayer1Score();
+    tennis.IncrementPlayer1Score();
+    tennis.IncrementPlayer1Score();
+    assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.FORTY));
+    
+    tennis.IncrementPlayer2Score();
+    tennis.IncrementPlayer2Score();
+    tennis.IncrementPlayer2Score();
+    tennis.IncrementPlayer2Score();
+    assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.FORTY));
+
+    tennis.IncrementPlayer1Score();
+    assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.ADVANTAGE));
+    assertThat(tennis.getPlayer2Score(), equalTo(Tennis.Score.FORTY));
+
+  }
 }

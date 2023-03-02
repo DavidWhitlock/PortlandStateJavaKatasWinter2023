@@ -12,36 +12,35 @@ public class Tennis {
   }
 
   public void IncrementPlayer1Score() {
-    //create a switch here for Score increments
-    //extracted();
+    Player1 = incrementPlayerScore(Player1);
   }
 
-  private void incrementPlayerScore(Score score) {
+  private Score incrementPlayerScore(Score score) {
     if (score == Score.LOVE){
-      //return Score.FIFTEEN;
-    } else if (Player1 == Score.FIFTEEN){
-      Player1 = Score.THIRTY;
-    } else if (Player1 == Score.THIRTY){
-      Player1 = Score.FORTY;
+      return Score.FIFTEEN;
+    } else if (score == Score.FIFTEEN){
+      return Score.THIRTY;
+    } else if (score == Score.THIRTY) {
+      return Score.FORTY;
+
+    } else if (score == Score.FORTY) {
+      return Score.ADVANTAGE;
+
+    } else {
+      return score;
     }
   }
 
   public void IncrementPlayer2Score() {
-    //create a switch here for Score increments
-    if (Player2 == Score.LOVE){
-      Player2 = Score.FIFTEEN;
-    } else if (Player2 == Score.FIFTEEN){
-      Player2 = Score.THIRTY;
-    } else if (Player2 == Score.THIRTY){
-      Player2 = Score.FORTY;
-    }
+    Player2 = incrementPlayerScore(Player2);
   }
 
   enum Score {
     LOVE,
     FIFTEEN,
     THIRTY,
-    FORTY
+    FORTY,
+    ADVANTAGE
   }
 
   public Score getPlayer1Score() {
