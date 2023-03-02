@@ -26,4 +26,13 @@ public class BankOCRRoom2Test
     assertFalse(bank.validate(ip));
   }
 
+  @Test
+  void testInValidStringWithCharsNotEqualTo27InEachLine() {
+    BankOCRRoom2 bank = new BankOCRRoom2();
+    String ip = "   _  _  _  _  _  _  _  _ \n" +
+            "| || || || || || || || || |\n" +
+            "|_||_||_||_||_||_||_||_||_|\n";
+    assertFalse(bank.validate(ip));
+  }
+
 }

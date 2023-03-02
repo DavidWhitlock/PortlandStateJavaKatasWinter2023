@@ -18,6 +18,18 @@ public class BankOCRRoom2 {
         return false;
     }
 
+    String[] eachLineArray = ip.split("\n");
+    if (eachLineArray.length != 3) {
+      return false;
+    }
+
+    for (String eachLine: eachLineArray) {
+      if (eachLine.length() != 27) {
+        return false;
+      }
+
+    }
+
 
     return true;
   }
