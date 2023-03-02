@@ -41,4 +41,6 @@ public class BankOCRRoom1Test
     result.append(reader.readLine());
     assertThat(result.toString().length(), equalTo(26));
   }
+
+
 }
