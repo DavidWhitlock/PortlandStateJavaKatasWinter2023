@@ -3,6 +3,7 @@ package edu.pdx.cs410J.room3;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BankOCRRoom3Test
@@ -15,8 +16,7 @@ public class BankOCRRoom3Test
 
   @Test
   void testExpectedNumberIsZero() {
-    assertEquals(BankOCRRoom3.characterMapping.get(0), String.format(
-             " _ \n| |\n|_|"));
+    assertThat(BankOCRRoom3.getMapping(new String[]{" _ ", "| |", "|_|"}), equalTo(0));
   }
 
 }
