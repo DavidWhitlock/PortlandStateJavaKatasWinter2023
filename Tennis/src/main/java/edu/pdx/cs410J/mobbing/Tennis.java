@@ -13,8 +13,12 @@ public class Tennis {
 
   public void IncrementPlayer1Score() {
     //create a switch here for Score increments
-    if (Player1 == Score.LOVE){
-      Player1 = Score.FIFTEEN;
+    //extracted();
+  }
+
+  private void incrementPlayerScore(Score score) {
+    if (score == Score.LOVE){
+      //return Score.FIFTEEN;
     } else if (Player1 == Score.FIFTEEN){
       Player1 = Score.THIRTY;
     } else if (Player1 == Score.THIRTY){
