@@ -2,14 +2,16 @@ package edu.pdx.cs410J.room3;
 
 import com.google.common.annotations.VisibleForTesting;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class BankOCRRoom3 {
-  public final static Map<Integer, String> characterMapping = Map.of(
-          0, " _ \n" +
-             "| |\n" +
-             "|_|\n"
+  public final static Map<Integer, String[]> characterMapping = Map.of(
+          0, new String[]{" _ ", "| |", "|_|"},
+          1, new String[]{"  |","  |","  |"},
+          2, new String[]{" _ ", " _|", "|_ "},
+          3, new String[]{" _ "," _|", " _|"},
+          4, new String[]{"   ", "|_|","  |"},
+          5, new String[]{" _ ", "|_ ", " _|"}
   );
   // x = 0-2, 3-5,
   // y = 0-2:q
