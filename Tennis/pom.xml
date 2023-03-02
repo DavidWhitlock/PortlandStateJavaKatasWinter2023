@@ -40,7 +40,7 @@
       </roles>
     </developer>
     <developer>
-      <id>student2</id>
+      <id>David BR</id>
       <name>Student Volunteer2</name>
       <roles>
         <role>Second Driver.  Third Navigator.</role>
@@ -48,28 +48,28 @@
     </developer>
     <developer>
       <id>student3</id>
-      <name>Student Volunteer3</name>
+      <name>Daniel Trang</name>
       <roles>
         <role>Third Driver.  Fourth Navigator.</role>
       </roles>
     </developer>
     <developer>
       <id>student4</id>
-      <name>Student Volunteer4</name>
+      <name>Polina Kuleshova</name>
       <roles>
         <role>Fourth Driver.  Fifth Navigator.</role>
       </roles>
     </developer>
     <developer>
       <id>student5</id>
-      <name>Student Volunteer5</name>
+      <name>Logan Anderson</name>
       <roles>
         <role>Fifth Driver.  Sixth Navigator.</role>
       </roles>
     </developer>
     <developer>
       <id>student6</id>
-      <name>Student Volunteer6</name>
+      <name>Leo Lu</name>
       <roles>
         <role>Sixth Driver.  Seventh Navigator.</role>
       </roles>
