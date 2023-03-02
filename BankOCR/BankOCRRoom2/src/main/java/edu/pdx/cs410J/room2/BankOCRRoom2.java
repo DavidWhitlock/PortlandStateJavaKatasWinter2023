@@ -8,4 +8,14 @@ public class BankOCRRoom2 {
   public static void main(String[] args) {
     System.err.println("Missing command line arguments");
   }
+
+  public boolean validate(String ip) {
+    if(ip==null || ip.isEmpty())
+      return false;
+
+    if(!ip.contains(" ") || !ip.contains("|") || !ip.contains("_"))
+      return false;
+
+    return true;
+  }
 }
