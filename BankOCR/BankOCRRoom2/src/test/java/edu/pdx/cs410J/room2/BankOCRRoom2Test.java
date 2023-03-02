@@ -56,4 +56,21 @@ public class BankOCRRoom2Test
     assertThat(bank.parse(ip), equalTo(0));
   }
 
+  @Test
+  void testFirstDigitIsOne(){
+    BankOCRRoom2 bank = new BankOCRRoom2();
+    String ip = "    _  _  _  _  _  _  _  _ \n" +
+            "  || || || || || || || || |\n" +
+            "  ||_||_||_||_||_||_||_||_|\n";
+    assertThat(bank.parse(ip), equalTo(1));
+  }
+
+  @Test
+  void testFirstDigitIsTwo(){
+    BankOCRRoom2 bank = new BankOCRRoom2();
+    String ip = " _  _  _  _  _  _  _  _  _ \n" +
+            " _|| || || || || || || || |\n" +
+            "|_ ||_||_||_||_||_||_||_||_|\n";
+    assertThat(bank.parse(ip), equalTo(2));
+  }
 }

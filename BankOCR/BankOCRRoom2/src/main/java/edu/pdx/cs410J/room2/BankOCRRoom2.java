@@ -37,15 +37,22 @@ public class BankOCRRoom2 {
   public int parse(String ip) {
     String[] eachLineArray = splitInputString(ip);
 
-    char[][] eachDigitArray = new char[3][3];
-    int j = 0;
+    StringBuilder sb = new StringBuilder();
+
     for (String eachLine: eachLineArray) {
-      for (int i = 0; i < 3; i++) {
-        eachDigitArray[j][i] = eachLine.charAt(i);
-      }
-      j++;
+      for (int i = 0; i < 3; i++)
+        sb.append(eachLine.charAt(i));
     }
-    return 0;
+    switch(sb.toString()){
+      case " _ | ||_|":
+        return 0;
+      case "     |  |":
+        return 1;
+      case " _  _||_ ":
+        return 2;
+      default:
+        return -1;
+    }
   }
 
   public String[] splitInputString(String ip) {
