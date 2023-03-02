@@ -13,8 +13,11 @@ public class BankOCRRoom2 {
     if(ip==null || ip.isEmpty())
       return false;
 
-    if(!ip.contains(" ") || !ip.contains("|") || !ip.contains("_"))
-      return false;
+    for(int i = 0; i < ip.length(); ++i) {
+      if((ip.charAt(i) != ' ') && (ip.charAt(i) != '|') && (ip.charAt(i) != '_') && (ip.charAt(i) != '\n'))
+        return false;
+    }
+
 
     return true;
   }
