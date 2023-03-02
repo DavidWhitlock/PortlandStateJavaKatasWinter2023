@@ -2,6 +2,7 @@ package edu.pdx.cs410J.mobbing;
 
 import org.junit.jupiter.api.Test;
 
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -19,9 +20,10 @@ public class TennisTest {
   }
 
   @Test
-  void incrementScore() {
+  void incrementPlayerScoreFromLoveTo15() {
     Tennis tennis = new Tennis();
-    tennis.getIncrementPlayer1Score();
+    assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.LOVE));
+    tennis.IncrementPlayerScore();
     assertThat(tennis.getPlayer1Score(), equalTo(Tennis.Score.FIFTEEN));
   }
 
