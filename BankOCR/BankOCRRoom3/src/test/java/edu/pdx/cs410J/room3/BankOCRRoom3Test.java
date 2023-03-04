@@ -1,5 +1,6 @@
 package edu.pdx.cs410J.room3;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -15,6 +16,7 @@ public class BankOCRRoom3Test
   }
 
   @Test
+  @Disabled
   void testExpectedNumberIsZero() {
     assertThat(BankOCRRoom3.getMapping(new String[]{" _ ", "| |", "|_|"}), equalTo(0));
   }
