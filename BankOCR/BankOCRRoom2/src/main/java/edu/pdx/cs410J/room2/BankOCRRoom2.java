@@ -6,6 +6,7 @@ public class BankOCRRoom2 {
 
   @VisibleForTesting
   public static void main(String[] args) {
+
     System.err.println("Missing command line arguments");
   }
 
@@ -18,7 +19,44 @@ public class BankOCRRoom2 {
         return false;
     }
 
+    String[] eachLineArray = splitInputString(ip);
+    if (eachLineArray.length != 3) {
+      return false;
+    }
+
+    for (String eachLine: eachLineArray) {
+      if (eachLine.length() != 27) {
+        return false;
+      }
+
+    }
 
     return true;
+  }
+
+  public int parse(String ip) {
+    String[] eachLineArray = splitInputString(ip);
+
+    StringBuilder sb = new StringBuilder();
+
+    for (String eachLine: eachLineArray) {
+      for (int i = 0; i < 3; i++)
+        sb.append(eachLine.charAt(i));
+    }
+    switch(sb.toString()){
+      case " _ | ||_|":
+        return 0;
+      case "     |  |":
+        return 1;
+      case " _  _||_ ":
+        return 2;
+      default:
+        return -1;
+    }
+  }
+
+  public String[] splitInputString(String ip) {
+    String[] eachLineArray = ip.split("\n");
+    return eachLineArray;
   }
 }

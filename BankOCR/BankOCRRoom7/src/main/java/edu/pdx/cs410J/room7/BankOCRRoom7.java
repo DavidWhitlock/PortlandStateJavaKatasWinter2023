@@ -20,15 +20,12 @@ public class BankOCRRoom7 {
     System.err.println("Missing command line arguments");
   }
 
-  public int validateString(String line) throws Exception {
+  public boolean validateString(String line) throws Exception {
     int stringyness = line.length();
-
-    if (stringyness != 27)
-    {
+    if (stringyness != 27) {
       throw new Exception("uh oh input was not 27, instead it was: " + stringyness);
     }
-
-    return stringyness;
+    return true;
   }
 
 
