@@ -10,4 +10,10 @@ public class RPNCalculatorRoom7Test
     new RPNCalculatorRoom7();
   }
 
+  @Test
+  void testOutputTwoOperatorDivision() {
+    String[] args = new String[]{"4","2","/"};
+
+  }
+
 }
