@@ -20,4 +20,11 @@ public class RPNCalculatorRoom1Test
     assertThat(rpn.calculateRPN(args), equalTo(6));
   }
 
+  @Test
+  void canAddTwoNumbersAndThenSubtractAThirdNumber(){
+    String args = "4 2 + 3 - ";
+    RPNCalculatorRoom1 rpn = new RPNCalculatorRoom1();
+    assertThat(rpn.calculateRPN(args), equalTo(3));
+  }
+
 }
