@@ -27,4 +27,18 @@ public class RPNCalculatorRoom1Test
     assertThat(rpn.calculateRPN(args), equalTo(3));
   }
 
+  @Test
+  void CodingDojoExample3() {
+    String args = "3 5 8 * 7 + *";
+    RPNCalculatorRoom1 rpn = new RPNCalculatorRoom1();
+    assertThat(rpn.calculateRPN(args), equalTo(141));
+  }
+
+  @Test
+  void CodingDojoExample1() {
+    String args = "20 5 /";
+    RPNCalculatorRoom1 rpn = new RPNCalculatorRoom1();
+    assertThat(rpn.calculateRPN(args), equalTo(4));
+  }
+
 }

@@ -15,25 +15,36 @@ public class RPNCalculatorRoom1 {
 
     Stack <Integer> stack  = new Stack<>();
     int result = 0;
-
+    int first;
+    int second;
     for(String op : ops) {
       switch(op) {
         case "+":
-          result += stack.pop() + stack.pop();
+          second = stack.pop();
+          first = stack.pop();
+          result = first + second;
           stack.push(result);
           break;
 
         case "-":
-          result -= stack.pop() - stack.pop();
+          second = stack.pop();
+          first = stack.pop();
+          result = first - second;
           stack.push(result);
           break;
 
         case "/":
-          result /= stack.pop() / stack.pop();
+          second = stack.pop();
+          first = stack.pop();
+          result = first / second;
           stack.push(result);
           break;
 
         case "*":
+          second = stack.pop();
+          first = stack.pop();
+          result = first * second;
+          stack.push(result);
           break;
 
         default:
