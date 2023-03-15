@@ -17,19 +17,19 @@
   <developers>
     <developer>
       <id>student1</id>
-      <name>Mob Programmer1</name>
+      <name>Shreyoshi Mahato</name>
     </developer>
     <developer>
       <id>student2</id>
-      <name>Mob Programmer2</name>
+      <name>Zhengmao Zhang</name>
     </developer>
     <developer>
       <id>student3</id>
-      <name>Mob Programmer3</name>
+      <name>James Ressler</name>
     </developer>
     <developer>
       <id>student4</id>
-      <name>Mob Programmer4</name>
+      <name>Junyi Feng</name>
     </developer>
     <developer>
       <id>student5</id>
@@ -37,7 +37,7 @@
     </developer>
     <developer>
       <id>student6</id>
-      <name>Mob Programmer6</name>
+      <name>Max Huecksteadt</name>
     </developer>
   </developers>
 
