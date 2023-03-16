@@ -12,13 +12,17 @@ public class MinesweeperRoom1Test {
   void createsMatrixCorrectly() {
     int m = 4, n = 3;
     MinesweeperRoom1 game = new MinesweeperRoom1(m, n);
-    Character[][] matrix = game.getMatrix();
+    Character[][] matrix = game.getDotMatrix();
     MatcherAssert.assertThat(matrix[0][0], equalTo('.'));
   }
 
 
-/*
   @Test
-  void canGetInputFromCommand
- */
+  void canGetInputFromCommand() {
+    int m = 6, n = 8;
+    MinesweeperRoom1 game = new MinesweeperRoom1(m, n);
+    game.getMatrix();
+    game.play();
+    game.getMatrix();
+  }
 }
