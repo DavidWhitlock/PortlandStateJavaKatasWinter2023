@@ -39,6 +39,17 @@ public class MinesweeperRoom7Test {
   }
 
   @Test
+  void oneByOneBoardWithPeriod() {
+    String[] board = {
+            "1 1",
+            "."
+    };
+
+    char[][] solution = MinesweeperRoom7.initializeBoard(board);
+    assertThat(solution[0][0], equalTo('0'));
+  }
+
+  @Test
   void canInitializeStateOfTheGame() {
     /*
  4 4
