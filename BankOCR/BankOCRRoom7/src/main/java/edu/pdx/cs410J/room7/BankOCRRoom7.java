@@ -2,6 +2,9 @@ package edu.pdx.cs410J.room7;
 
 import com.google.common.annotations.VisibleForTesting;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class BankOCRRoom7 {
   final String ZERO = " _ | ||_|";
   final String ONE = "     |  |";
@@ -17,7 +20,8 @@ public class BankOCRRoom7 {
 
   @VisibleForTesting
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
+    ArrayList<String> argList = new ArrayList<>(Arrays.asList(args));
+
   }
 
   public boolean validateString(String line) throws Exception {

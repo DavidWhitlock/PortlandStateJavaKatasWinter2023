@@ -25,13 +25,25 @@ public class MinesweeperRoom1 {
     }
   }
 
-  public void checkNeighbor(int i, int j) {
-    if (matrix[i][j] == '*') {
-      if (i+1 < m && i-1 >= 0) {
-        if (j + 1 < n && j-1 >= 0) {
+  public void checkNeighbor(int x, int y) {
+    if (matrix[x][y] == '*') {
+      for(int i = x-1 ; i<x+2 ; i++){
+        for(int j = y-1 ; j<y+2 ; j++){
+          if(i >= 0 || i < m){
+            if(j >= 0 || j < n){
+              if(matrix[i][j] == '.'){
+                matrix[i][j] = '1';
+              }
+              else{
+                int temp = Integer.parseInt(matrix[i][j].toString()) +1 ;
+                temp += 1;
+              }
+            }
+          }
+        }
       }
-    }
   }
+
 
   @VisibleForTesting
   public static void main(String[] args) {
