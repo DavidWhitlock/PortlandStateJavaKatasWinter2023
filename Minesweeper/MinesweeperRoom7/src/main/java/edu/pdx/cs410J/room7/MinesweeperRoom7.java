@@ -6,6 +6,12 @@ public class MinesweeperRoom7 {
 
   @VisibleForTesting
   public static void main(String[] args) {
-    System.err.println("Missing command line arguments");
+
+  }
+
+
+  public static void initializeBoard() {
+    char[][] 2DBoard = new char[]
+    return 2DBoard;
   }
 }
