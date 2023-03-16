@@ -9,9 +9,28 @@ public class MinesweeperRoom1 {
   int m;
   int n;
 
+  Character[][] matrix;
+
   MinesweeperRoom1(int m, int n) {
     this.m = m;
     this.n = n;
+    matrix = getRandomMatrix();
+  }
+
+  public Character[][] play() {
+    for (int i = 0; i < m; i++) {
+      for (int j = 0; j < n; j++) {
+
+      }
+    }
+  }
+
+  public void checkNeighbor(int i, int j) {
+    if (matrix[i][j] == '*') {
+      if (i+1 < m && i-1 >= 0) {
+        if (j + 1 < n && j-1 >= 0) {
+      }
+    }
   }
 
   @VisibleForTesting

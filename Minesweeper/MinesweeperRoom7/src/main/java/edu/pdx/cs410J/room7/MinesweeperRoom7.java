@@ -16,8 +16,8 @@ public class MinesweeperRoom7 {
       b.) initializeBoard(int i1, int i2) will...
         ii.) Processes: -> , Returns: ->
  */
-  public static char[][] initializeBoard(String mineField) {
-    String[] coordinate = mineField.split(" ");
+  public static char[][] initializeBoard(String... mineField) {
+    String[] coordinate = mineField[0].split(" ");
     int row = Integer.parseInt(coordinate[0]);
     int column = Integer.parseInt(coordinate[1]);
 
@@ -27,6 +27,7 @@ public class MinesweeperRoom7 {
   }
   public static char[][] initializeBoard(int i1, int i2) {
     char[][] twoDBoard = new char[i1][i2];
+    twoDBoard[0][0] = '*';
     return twoDBoard;
   }
 }
