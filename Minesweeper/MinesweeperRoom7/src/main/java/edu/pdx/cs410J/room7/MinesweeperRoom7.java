@@ -9,12 +9,24 @@ public class MinesweeperRoom7 {
 
   }
 
-
+/*
+    Two initializeBoard() functions exist, where:
+      a.) initializeBoard(String mineField) will...
+        i.) Processes: -> mineField (column & row-number), e.g. "3 3", Returns:
+      b.) initializeBoard(int i1, int i2) will...
+        ii.) Processes: -> , Returns: ->
+ */
   public static char[][] initializeBoard(String mineField) {
+    String[] coordinate = mineField.split(" ");
+    int row = Integer.parseInt(coordinate[0]);
+    int column = Integer.parseInt(coordinate[1]);
 
+    // char[][] metal_detector =
+
+    return initializeBoard(row, column);
   }
-  public static char[][] initializeBoard(int i, int i1) {
-    char[][] twoDBoard = new char[i][i1];
+  public static char[][] initializeBoard(int i1, int i2) {
+    char[][] twoDBoard = new char[i1][i2];
     return twoDBoard;
   }
 }
