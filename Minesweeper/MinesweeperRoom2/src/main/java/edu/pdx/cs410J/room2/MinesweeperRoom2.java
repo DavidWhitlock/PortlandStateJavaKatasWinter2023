@@ -8,4 +8,13 @@ public class MinesweeperRoom2 {
   public static void main(String[] args) {
     System.err.println("Missing command line arguments");
   }
+
+  public boolean validateInput(String input) {
+    String[] inputArray = input.split("\n");
+    for (String eachLine : inputArray) {
+      //  if ()
+    }
+    return true;
+  }
+
 }
