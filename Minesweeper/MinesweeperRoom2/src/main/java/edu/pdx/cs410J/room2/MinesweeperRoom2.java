@@ -13,9 +13,17 @@ public class MinesweeperRoom2 {
     boolean val = true;
     String[] inputArray = input.split("\n");
     String linefirst = inputArray[0];
-    String[] fieldSize = input.split(" ");
+    String[] fieldSize = linefirst.split(" ");
     try {
-      if (Integer.parseInt(fieldSize[0]) > 0 && Integer.parseInt(fieldSize[1]) > 0 && Integer.parseInt(fieldSize[0]) <= 100 && Integer.parseInt(fieldSize[1]) <= 100) {
+      int firstInt = Integer.parseInt(fieldSize[0]);
+      int secondInt = Integer.parseInt(fieldSize[1]);
+      if (firstInt > 0 && secondInt > 0 && firstInt <= 100 && secondInt <= 100) {
+        if (inputArray.length-1 != firstInt) {
+          return false;
+        }
+        if (inputArray[1].length() != secondInt) {
+          return false;
+        }
         for(int i=1;i< inputArray.length; i++){
 
         }

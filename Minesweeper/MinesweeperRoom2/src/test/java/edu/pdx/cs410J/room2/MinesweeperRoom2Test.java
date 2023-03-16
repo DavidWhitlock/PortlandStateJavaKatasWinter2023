@@ -15,14 +15,16 @@ public class MinesweeperRoom2Test
   @Test
   public void validateFirstLineOfTheInput() {
     MinesweeperRoom2 mw = new MinesweeperRoom2();
-    String inputArray = "4 4\n" +
+    String inputArray =
+            "4 4\n" +
             "*...\n" +
             "....\n" +
             ".*..\n" +
             "....";
 
      assertTrue(mw.validateInput(inputArray));
-
   }
+
+
 
 }
