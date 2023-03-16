@@ -13,6 +13,10 @@ class MinesweeperRoom1IT extends InvokeMainTestCase {
     InvokeMainTestCase.MainMethodResult result = invokeMain(MinesweeperRoom1.class);
     assertThat(result.getTextWrittenToStandardError(), containsString("Missing command line arguments"));
   }
-
+/*
+  @Test
+  void grabsCommandLineInputCorrectly() {
+  }
+*/
 
 }
