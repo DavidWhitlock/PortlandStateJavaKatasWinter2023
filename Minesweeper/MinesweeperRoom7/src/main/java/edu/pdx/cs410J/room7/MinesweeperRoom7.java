@@ -2,6 +2,8 @@ package edu.pdx.cs410J.room7;
 
 import com.google.common.annotations.VisibleForTesting;
 
+import java.util.Arrays;
+
 public class MinesweeperRoom7 {
 
   @VisibleForTesting
@@ -21,13 +23,13 @@ public class MinesweeperRoom7 {
     int row = Integer.parseInt(coordinate[0]);
     int column = Integer.parseInt(coordinate[1]);
 
-    // char[][] metal_detector =
-
-    return initializeBoard(row, column);
+    String[] gameBoard = Arrays.copyOfRange(mineField, 1, mineField.length);
+    return initializeBoard(row, column, gameBoard);
   }
-  public static char[][] initializeBoard(int i1, int i2) {
+  public static char[][] initializeBoard(int i1, int i2, String... gameBoard) {
     char[][] twoDBoard = new char[i1][i2];
-    twoDBoard[0][0] = '*';
+    char space = gameBoard[0].charAt(0);
+    twoDBoard[0][0] = space;
     return twoDBoard;
   }
 }
