@@ -19,6 +19,16 @@ public class MinesweeperRoom7Test
   }
 
   @Test
+  void canInitializeBoardWithString() {
+    new MinesweeperRoom7();
+    char[][] testMatrix = MinesweeperRoom7.initializeBoard("1 1");
+
+    assertThat(testMatrix.length, equalTo(1));
+    assertThat(testMatrix[0].length, equalTo(1));
+
+  }
+
+  @Test
   void canInitializeStateOfTheGame() {
     /*
  4 4
