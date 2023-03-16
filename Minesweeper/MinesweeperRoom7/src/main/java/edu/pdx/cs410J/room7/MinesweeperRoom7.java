@@ -10,8 +10,11 @@ public class MinesweeperRoom7 {
   }
 
 
-  public static void initializeBoard() {
-    char[][] 2DBoard = new char[]
-    return 2DBoard;
+  public static char[][] initializeBoard(String mineField) {
+
+  }
+  public static char[][] initializeBoard(int i, int i1) {
+    char[][] twoDBoard = new char[i][i1];
+    return twoDBoard;
   }
 }

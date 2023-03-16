@@ -10,4 +10,17 @@ public class MinesweeperRoom2Test
     new MinesweeperRoom2();
   }
 
+  @Test
+  public void validateFirstLineOfTheInput() {
+    MinesweeperRoom2 mw = new MinesweeperRoom2();
+    String inputArray = "4 4\n" +
+            "*...\n" +
+            "....\n" +
+            ".*..\n" +
+            "....";
+
+    // assertTrue(mw.validateInput());
+
+  }
+
 }
